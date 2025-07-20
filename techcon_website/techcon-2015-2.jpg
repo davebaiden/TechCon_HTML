@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="en" class="direction-ltr" style="direction:ltr;" prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article#"><head><!-- OneTrust Cookies Consent Notice start for arm.com -->
+          <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true"
+            type="text/javascript" charset="UTF-8" data-domain-script="7d663903-ba9e-4bc2-a2f8-5844edbb5408"></script>
+          <!-- OneTrust Cookies Consent Notice end for arm.com --><link rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/system/h-0000000069691b64-https-communityarmcom-443-css/platform.less?_=638878424590773357" type="text/css" media="screen" /><script type ="text/javascript" src="https://community.arm.com/cfs-filesystemfile/__key/system/js/jquery.min.js?_=638878424120492891"></script><script src="https://community.arm.com/cfs-filesystemfile/__key/system/js/jquery.migrate.js?_=638878424120272886"></script><script type ="text/javascript" src="https://community.arm.com/cfs-filesystemfile/__key/system/js/telligent.glow.min.js?_=638878424122212891"></script><script type="text/javascript" src="https://community.arm.com/cfs-filesystemfile/__key/system/js/telligent.evolution.min.js?_=638878424121962988"></script><script type="text/javascript">
+// <![CDATA[
+try { jQuery.telligent.evolution.site.configure({baseUrl:'https://community.arm.com/',cookieSameSiteSetting:'Lax',loginReturnUrl:'/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/walking-around-the-mbed-zone-at-techcon-2015',isLogout:false,enableGlobalForm:true,scheduledFileStatusUrl:'https://community.arm.com/callback.ashx?__type=Telligent.Evolution.Platform.Scripting.Plugins.ScheduledFileSupportPlugin%2C%20Telligent.Evolution.Platform',badgeablePanelCountUrl:'https://community.arm.com/callback.ashx?__type=Telligent.Evolution.CoreServices.Administration.Plugins.BadgeablePanelsServicePlugin%2C%20Telligent.Evolution.Platform',contentPeekUrl:'https://community.arm.com/callback.ashx?__type=Telligent.Evolution.CoreServices.Peek.Implementations.ContentPeekSupportPlugin%2C%20Telligent.Evolution.Platform',contextQueryString:'_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',editorConfigVersionKey:'AAAAAGlpG2c%3D-AAAAAGBd0C8%3D-638827501165970000-AAAAAGly1D4%3D',maxMediaWidth:1265,mediaMaxHeight:0,defaultMediaWidth:320,defaultMediaHeight:240,directUploadContext:'295ee05a-1391-42c6-ab19-33c4ed261e9e',directUploadUrl:'https://community.arm.com/api.ashx/v2/cfs/temporary.json?UploadContextId=295ee05a-1391-42c6-ab19-33c4ed261e9e',alphaBlendUrl:'https://community.arm.com/cfs-filesystemfile/__key/system/images/alpha_5F00_blend.png?_=638878424092642860',blankUrl:'https://community.arm.com/cfs-filesystemfile/__key/system/images/blank.gif?_=638878424096552862',collapsedUrl:'https://community.arm.com/cfs-filesystemfile/__key/system/images/collapsed.gif?_=638878424100442865',hueBlendUrl:'https://community.arm.com/cfs-filesystemfile/__key/system/images/hue_5F00_blend.png?_=638878424106912890',blendUrl:'https://community.arm.com/cfs-filesystemfile/__key/system/images/blend.png?_=638878424096712863',ddlButtonUrl:'https://community.arm.com/cfs-filesystemfile/__key/system/images/ddl_5F00_button.gif?_=638878424102802869',expandedUrl:'https://community.arm.com/cfs-filesystemfile/__key/system/images/expanded.gif?_=638878424105612939',transparentUrl:'https://community.arm.com/cfs-filesystemfile/__key/system/images/transparent.png?_=638878424119022882',datePattern:{
+	pattern: '<January,February,March,April,May,June,July,August,September,October,November,December> <1-31>, <0001-9999>',
+    yearIndex: 2,
+    monthIndex: 0,
+    dayIndex: 1,
+    hourIndex: -1,
+    minuteIndex: -1,
+    amPmIndex: -1,
+    parseDateOnLoad: true
+},timePattern:{
+	pattern: '<1-12>:<00-59> <AM,PM>',
+    yearIndex: -1,
+    monthIndex: -1,
+    dayIndex: -1,
+    hourIndex: 0,
+    minuteIndex: 1,
+    amPmIndex: 2,
+    parseDateOnLoad: true
+},dateTimePattern:{
+	pattern: '<January,February,March,April,May,June,July,August,September,October,November,December> <1-31>, <0001-9999> <1-12>:<00-59> <AM,PM>',
+    yearIndex: 2,
+    monthIndex: 0,
+    dayIndex: 1,
+    hourIndex: 3,
+    minuteIndex: 4,
+    amPmIndex: 5,
+    parseDateOnLoad: true
+},monthNames:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],dayNames:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],authorizationCookieName:'.te.csrf',accessingUserId:2101,accessingUserIsSystemAccount:true,accessingUserTemporary:false,accessingUserIsAuthenticated:false,restUiContext:"p\u0026post\u0026a3b17ab0af5f11dda3501fcf55d89593\u00264677d8ae29054ea69268132b4c46eb85\u00260",versionKey:'638478339320000000',directionality:'ltr',editorLanguage:'en-US',autoLinkPattern:/((?:http|ftp|https):\/\/)([\w\-]{1,63}(?:\.[\w\-]{1,63}){0,127}(?:\([\w\-\.,@?!^=%&:/~\+#]{0,2046}\)|[\w\-\.,@?!^=%&:/~\+#]{0,2047}[\w\-@?^=%&:/~\+#]){0,2048})/i,defaultErrorMessage:'An error occurred.  Please try again or contact your administrator.',quoteText:'Quote',dateMinuteInFutureFormat:'in a few seconds',dateMinutesInFutureFormat:'in {0} minutes',dateHourInFutureFormat:'in over an hour',dateHoursInFutureFormat:'in {0} hours',dateDayInFutureFormat:'in {0} day',dateDaysInFutureFormat:'in {0} days',dateMonthInFutureFormat:'in {0} month',dateMonthsInFutureFormat:'in {0} months',dateYearInFutureFormat:'in over {0} year',dateYearsInFutureFormat:'in over {0} years',dateNowAgoFormat:'now',dateMinuteAgoFormat:'a few seconds ago',dateMinutesAgoFormat:'{0} minutes ago',dateHourAgoFormat:'{0} hour ago',dateHoursAgoFormat:'{0} hours ago',dateDayAgoFormat:'{0} day ago',dateDaysAgoFormat:'{0} days ago',dateMonthAgoFormat:'{0} month ago',dateMonthsAgoFormat:'{0} months ago',dateYearAgoFormat:'over {0} year ago',dateYearsAgoFormat:'over {0} years ago',previewZoomIn:'Zoom in',previewZoomOut:'Zoom out',previewClose:'Close',collapseExpandedItem:'Collapse',beforeUnloadMessageTip:'Progress will cancel if you leave.',pendingTip:'Progress will begin soon…',beforeUnloadMessageLabel:'Please wait…',clearText:'Clear',okText:'OK'});
+jQuery.extend($.fn.evolutionUserFileTextBox.defaults,{removeText:'Remove',selectText:'Select/Upload...',noFileText:'No File Selected'});
+jQuery.telligent.evolution.validation.registerExtensions({password:'Password contains invalid chars ...',passwordRegex:'^.*$',email:'Your email address is invalid.',emailRegex:'^.+@.+$',username:'Your sign in name does not meet the requirements for this site.',usernameRegex:'^.+$',emails:'One or more emails is invalid',url:'URL not in correct format',urlRegex:'^(?:(?:http|https|mailto|ftp|mms):|/|#|~/|data:image/(?:png|gif|jpe?g);base64,)',required:'This field is required.',date:'Please enter a valid date.',dateISO:'Please enter a valid date (ISO).',number:'Please enter a valid number.',digits:'Please enter only digits.',equalTo:'Please enter the same value again.',pattern:'Please enter valid value.',emailexists:'This email address is already in use.',groupnameexists:'This name is already in use.',mailinglistnameexists:'This name is already in use.',usernameexists:'This name is already in use.',wikipageexists:'This name is already in use.',maxlength:'Please enter no more than {0} characters.',minlength:'Please enter at least {0} characters.',rangelength:'Please enter a value between {0} and {1} characters long.',range:'Please enter a value between {0} and {1}.',max:'Please enter a value less than or equal to {0}.',min:'Please enter a value greater than or equal to {0}.',step:'Please enter a value that is a multiple of {0}.'});
+jQuery.extend(jQuery.fn.evolutionLike.defaults,{likeText:'Like',unlikeText:'Unlike',modalTitleText:'People who like this',modalShowMoreText:'Show More',whoLikesOtherText:'\u003ca href=\"{user_profile_url}\" class=\"internal-link view-user-profile\"\u003e{user_display_name}\u003c/a\u003e likes this',whoLikesOtherTwoText:'\u003ca href=\"{user_profile_url}\" class=\"internal-link view-user-profile\"\u003e{user_display_name}\u003c/a\u003e and \u003cspan class=\"who-likes\"\u003e1 other\u003c/span\u003e like this',whoLikesOtherMultipleText:'\u003ca href=\"{user_profile_url}\" class=\"internal-link view-user-profile\"\u003e{user_display_name}\u003c/a\u003e and \u003cspan class=\"who-likes\"\u003e{count} others\u003c/span\u003e like this',whoLikesAccessingText:'You like this',whoLikesAccessingTwoText:'You and \u003cspan class=\"who-likes\"\u003e1 other\u003c/span\u003e like this',whoLikesAccessingMultipleText:'You and \u003cspan class=\"who-likes\"\u003e{count} others\u003c/span\u003e like this'});
+jQuery.extend(jQuery.fn.evolutionInlineTagEditor.defaults,{editButtonText:'Edit tags',selectTagsText:'Select tags',saveTagsText:'Save',cancelText:'Cancel'});
+jQuery.extend(jQuery.fn.evolutionStarRating.defaults,{titles:['Terrible','Poor','Fair','Average','Good','Excellent'],ratingMessageFormat:'Average rating: {rating} out of {max_rating} with {count} ratings.'});
+jQuery.extend(jQuery.fn.evolutionModerate.defaults,{moderateLinkText:'moderate',reportLinkText:'Report as abusive',reportedLinkText:'Reported as abusive',reportedNotificationMessageText:'{NAME}\u0027s post has been reported. \u003cstrong\u003eThank you for your feedback.\u003c/strong\u003e'});
+jQuery.extend(jQuery.fn.evolutionBookmark.defaults,{deleteBookmarkText:'Unbookmark {content_type_name}',addBookmarkText:'Bookmark this {content_type_name}',processingText:'...'});
+jQuery.extend($.fn.evolutionCodeEditor.defaults,{editorUrl:'/cfs-file/__key/system/ace/ace.js'});
+jQuery.extend(jQuery.telligent.evolution.ui.components.forumvotes.defaults,{modalTitleTextThread:'People who had this question',modalTitleTextReply:'People helped by this answer',noVotesText:'No Votes',modalShowMoreText:'More'});
+jQuery.extend(jQuery.telligent.evolution.ui.components.forumqualityvotes.defaults,{modalTitleText:'People who voted on this thread',tipTextThread:'View Voters',noVotesText:'No Votes',upVoteText:'Vote Up',downVoteText:'Vote Down',logintext:'Login to vote on this thread',modalShowMoreText:'More'});
+jQuery.extend(jQuery.fn.evolutionFeature.defaults,{editFeatureText:'Edit Feature',addFeatureText:'Feature ',processingText:'...'});
+jQuery.extend(jQuery.fn.evolutionPager.defaults,{previousLabel:'Go to previous page',nextLabel:'Go to next page',firstLabel:'Go to first page',lastLabel:'Go to last page',individualPageLabel:'Go to page {0}'});
+jQuery.telligent.evolution.systemNotifications.configure({explicitPanelUrl:'#_cptype=panel\u0026_cpcontexttype=Explicit\u0026_cppanelid=994a7020-02f3-4fc2-ba7d-be3f0febf9f9\u0026viewnotification=1',notificationText:'System Notification',reviewText:'Click to review and resolve.',andMoreText:' (plus {0} more)'});
+} catch(e) { };
+// ]]>
+</script><style type="text/css">
+li.activity-story.content-type-293f75d1-2a3e-43ed-9173-af885c593139 { padding: 10px 0 10px 10px !important; }
+li.activity-story.content-type-293f75d1-2a3e-43ed-9173-af885c593139 .avatar { display: none !important; }
+li.activity-story.content-type-293f75d1-2a3e-43ed-9173-af885c593139 .post-actions.activity { display: none; }
+.twitter-tweet.twitter-tweet-rendered { margin: 0 0 5px !important; max-width: 99% !important; min-width: 95% !important; }
+</style><script type="text/javascript">jQuery(function($) {
+	$.telligent.evolution.messaging.subscribe('userActionFollowToggle', function(data) {
+		var e = $(data.target);
+		var userId = e.data('userid'), accessingUserId = e.data('accessinguserid'), v = e.data('follow');
+		e.html('...');
+		if (v) {
+			$.telligent.evolution.post({
+				url: $.telligent.evolution.site.getBaseUrl() + 'api.ashx/v2/users/{FollowerId}/following.json',
+				data: { FollowerId: accessingUserId, FollowingId: userId },
+				dataType: 'json',
+				success: function(response) { e.html('Unfollow').data('follow', false); },
+				error: function(response) {  e.html('Follow').data('follow', true); }
+			});
+		} else {
+			$.telligent.evolution.del({
+				url: $.telligent.evolution.site.getBaseUrl() + 'api.ashx/v2/users/{FollowerId}/following/{FollowingId}.json',
+				data: { FollowerId: accessingUserId, FollowingId: userId },
+				dataType: 'json',
+				success: function(response) { e.html('Follow').data('follow', true); },
+				error: function(response) {  e.html('Unfollow').data('follow', false); }
+			});
+		}
+	});
+});</script><script type="text/javascript">jQuery(function($) {
+	$.telligent.evolution.messaging.subscribe('userActionFriendshipToggle', function(data) {
+		var e = $(data.target);
+		var userId = e.data('userid'), accessingUserId = e.data('accessinguserid'), v = parseInt(e.data('friendship'));
+		var t = e.html();
+		e.html('...');
+		if (v == 0) {
+				e.html(t);
+				$.glowModal('/user/requestfriend?UserId=' + userId + '', {width:670,height:390});
+		} else if (v == 3) {
+				$.telligent.evolution.post({
+					url: $.telligent.evolution.site.getBaseUrl() + 'api.ashx/v2/users/{RequestorId}/friends.json',
+					data: { RequestorId: accessingUserId, RequesteeId: userId, RequestMessage: '\u003cp\u003eHi, I\u0027d like to\u0026nbsp;connect!\u003c/p\u003e '},
+					dataType: 'json',
+					success: function(response) { window.location = window.location; },
+					error: function(response) {  e.html(t); }
+				});
+		} else if (v == 1 || v == 2 || v == 4) {
+			if (v == 4 || (v == 1 && window.confirm('Are you sure you want to cancel this friendship request?')) || (v == 2 && window.confirm('Are you sure you want to unfriend this person?'))) {
+				$.telligent.evolution.del({
+					url: $.telligent.evolution.site.getBaseUrl() + 'api.ashx/v2/users/{RequestorId}/friends/{RequesteeId}.json',
+					data: { RequestorId: accessingUserId, RequesteeId: userId },
+					dataType: 'json',
+					success: function(response) { window.location = window.location; },
+					error: function(response) {  e.html(t); }
+				});
+			} else { e.html(t); }
+		}
+	});
+});</script><script type="text/javascript">
+(function($){
+$.extend($.fn.evolutionUpDownVoting.defaults,{voteDownMessage:'Vote against this idea',voteUpMessage:'Vote for this idea',loginMessage:'Sign in to vote on ideas',noPermissionMessage:'You do not have permission to vote for this idea',notGroupMemberMessage:'Join this group to vote on this idea',deleteMessage:'Remove your vote for this idea',readOnlyMessage: 'Voting on this idea has been disabled',switchToDownVoteMessage: 'Vote against this idea instead of for it',switchToUpVoteMessage: 'Vote for this idea instead of against it',voteDownAgainMessage:'Vote against this idea again',voteUpAgainMessage:'Vote for this idea again',removeDownVoteMesage:'Remove a vote against this idea',removeUpVoteMessage:'Remove a vote for this idea',viewVotesMessage:'View votes' });}(jQuery));
+</script>
+<script type="text/javascript">(function($){ $.telligent.evolution.media.defaults.endpoint = 'https://community.arm.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.FileViewerEndpoint%2C%20Telligent.Evolution.Platform'; }(jQuery));</script><script type="text/javascript">(function($){ $.telligent.evolution.preview.defaults.endpoint = 'https://community.arm.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.WebPreviewEndpoint%2C%20Telligent.Evolution.Platform'; }(jQuery));</script><script type="text/javascript">(function($){ $.fn.evolutionComposer.plugins.mentions.defaults.mentionablesEndpoint = 'https://community.arm.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.MentionablesEndpoint%2C%20Telligent.Evolution.Platform'; }(jQuery));</script><script type="text/javascript">(function($){ $.telligent.evolution.language.defaults.dateEndpoint = 'https://community.arm.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.DateFormattingEndpoint%2C%20Telligent.Evolution.Platform'; }(jQuery));</script><script type="text/javascript">(function($){ $.fn.evolutionUserFileTextBox.defaults.endpoint = 'https://community.arm.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.UserFileTextBoxEndpoint%2C%20Telligent.Evolution.Platform'; }(jQuery));</script><style>
+.contextual-administration-handle::after {
+	width: 80%;
+	height: 80%;
+	top: 10%;
+	left: 10%;
+	background-image: url('https://community.arm.com/cfs-filesystemfile/__key/defaultwidgets/fd266454714b4b3c9b7194d8b1bf9741-63df45f4dd4647c7821531bc63994672/edit.svg?_=638878423651482492');
+}
+#_tc_ap.contextual-administration-panel-container .contextual-administration-panel-wrapper .contextual-panel .contextual-panel-heading .navigation-list .search a {
+	background-image: url('https://community.arm.com/cfs-filesystemfile/__key/defaultwidgets/fd266454714b4b3c9b7194d8b1bf9741-63df45f4dd4647c7821531bc63994672/glass.svg?_=638878423651612432');
+	background-repeat: no-repeat;
+}
+#_tc_ap.contextual-administration-panel-container .contextual-administration-panel-wrapper .contextual-panel .contextual-panel-heading .navigation-list .close a {
+	background-image: url('https://community.arm.com/cfs-filesystemfile/__key/defaultwidgets/fd266454714b4b3c9b7194d8b1bf9741-63df45f4dd4647c7821531bc63994672/cross.svg?_=638878423651362426');
+	background-repeat: no-repeat;
+}
+}
+#_tc_ap.contextual-administration-panel-container .contextual-administration-panel-wrapper .contextual-panel .contextual-panel-heading-search a.exit-search {
+	background-image: url('https://community.arm.com/cfs-filesystemfile/__key/defaultwidgets/fd266454714b4b3c9b7194d8b1bf9741-63df45f4dd4647c7821531bc63994672/cross.svg?_=638878423651362426');
+	background-repeat: no-repeat;
+}
+#_tc_ap.contextual-administration-panel-container .contextual-administration-panel-wrapper .contextual-panel .contextual-panel-heading .navigation-list .back a .icon {
+	background-image: url('https://community.arm.com/cfs-filesystemfile/__key/defaultwidgets/fd266454714b4b3c9b7194d8b1bf9741-63df45f4dd4647c7821531bc63994672/back.svg?_=638878423650812430');
+	background-repeat: no-repeat;
+}
+</style>
+
+
+
+<script type="text/html" id="fragment-63df45f4dd4647c7821531bc639946721860225857_categoriesTemplate">
+				<a href="#"  class="ui-tourtip contextual-administration-handle do-not-print" data-tourtipkey="t;9EXfY0bdx0eCFTG8Y5lGcg;NNHKj3l4Be8gRk6QmqXpyA" data-tourtipmessage="Manage your community"  data-tourtipindex="100" >
+			<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>
+		</a>
+		<span  class="ui-presentservice contextual-administration-total badge do-not-print" data-presentservices="4a00f2e762ed4213a8e6f0697b5c9e5c|00000000000000000000000000000000|"  data-count="<%= (count || 0) %>"><%= (count || 0) %></span>
+	</script>
+
+<script type="text/html" id="fragment-63df45f4dd4647c7821531bc639946721860225857_panelContainerTemplate">
+	<div id="_tc_ap"  class="ui-presentservice contextual-administration-panel-container" data-presentservices="4a00f2e762ed4213a8e6f0697b5c9e5c|00000000000000000000000000000000|" >
+	</div>
+</script>
+
+<script type="text/html" id="fragment-63df45f4dd4647c7821531bc639946721860225857_panelLoadingIndicatorTemplate">
+	<div class="contextual-administration-panel-loading">
+		<div class="spinner">
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+		</div>
+	</div>
+</script>
+
+<script type="text/html" id="fragment-63df45f4dd4647c7821531bc639946721860225857_panelTemplate">
+	<div class="contextual-administration-panel-wrapper" data-panelid="<%= panelId %>" data-namespace="<%: namespace %>">
+		<div class="contextual-panel <%= type %> <%= cssClass %>">
+			<div class="contextual-panel-heading">
+				<ul class="navigation-list">
+					<% if(backUrl && backLabel) { %>
+						<li class="navigation-list-item <%= (backUrl == '#_cptype=root' ? type : type) %> back">
+							<a href="<%: backUrl %>" class="ui-tip" data-tip="Back">
+								<span class="icon">&lt;</span> <span class="label ui-squeezetext" data-minsize="11"><%= backLabel %></span>
+							</a>
+						</li>
+					<% } else if (backLabel) { %>
+						<li class="navigation-list-item <%= (backUrl == '#_cptype=root' ? type : type) %> back">
+							<a href="#" class="ui-tip" data-tip="Back" onclick="window.history.back(); return false;">
+								<span class="icon">&lt;</span> <span class="label ui-squeezetext" data-minsize="11"><%= backLabel %></span>
+							</a>
+						</li>
+					<% } %>
+					<li class="navigation-list-item search"><a href="#" class="ui-tip" data-tip="Search">Search</a></li>
+					<li class="navigation-list-item close"><a href="#" data-messagename="contextual.shell.close" class="ui-tip" data-tip="Close">&times;</a></li>
+				</ul>
+				<h3 class="name ui-squeezetext ui-tip" data-minsize="11"><%= (name || '') %></h3>
+				<div class="custom-panel-heading-content"></div>
+				<div class="contextual-panel-heading-search">
+					<form>
+					<input type="text" placeholder="Search" />
+					<a href="#" class="exit-search ui-tip" data-tip="Close Search">&times;</a>
+					</form>
+				</div>
+			</div>
+			<div class="contextual-panel-content glow-scrollable <%= contentClass %>">
+				<%= (typeof content === "string" ? content : "") %>
+			</div>
+			<div class="contextual-panel-content-search-results glow-scrollable">
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/html" id="fragment-63df45f4dd4647c7821531bc639946721860225857_customPanelTemplate">
+	<div class="contextual-administration-panel-wrapper" data-panelid="<%= panelId %>" data-namespace="<%: namespace %>" data-rootpanelid="<%= (rootPanelId || '') %>">
+		<div class="contextual-panel <%= cssClass %>">
+			<div class="contextual-panel-heading">
+				<ul class="navigation-list">
+					<% if(backUrl && backLabel) { %>
+						<li class="navigation-list-item back">
+							<a href="<%: backUrl %>" class="ui-tip" data-tip="Back">
+								<span class="icon">&lt;</span> <span class="label ui-squeezetext" data-minsize="11"><%= backLabel %></span>
+							</a>
+						</li>
+					<% } %>
+					<li class="navigation-list-item close"><a href="#" data-messagename="contextual.shell.close" class="ui-tip" data-tip="Close">&times;</a></li>
+				</ul>
+				<h3 class="name ui-squeezetext ui-tip" data-minsize="11"><%= (name || '') %></h3>
+				<div class="custom-panel-heading-content"></div>
+			</div>
+			<div class="contextual-panel-content <%= contentClass %>">
+				<%= (typeof content === "string" ? content : "") %>
+			</div>
+		</div>
+	</div>
+</script>
+
+
+
+
+
+<script type="text/javascript" src="https://community.arm.com/cfs-filesystemfile/__key/defaultwidgets/fd266454714b4b3c9b7194d8b1bf9741-63df45f4dd4647c7821531bc63994672/ui.js?_=638878423652672461"></script>
+<script type="text/javascript">
+// only show contextual shell in top-most window
+if (window === window.top) {
+	jQuery(function(j){
+		jQuery.telligent.evolution.widgets.contextualPanelShell.register({
+			rootCategoriesTemplateId: 'fragment-63df45f4dd4647c7821531bc639946721860225857_categoriesTemplate',
+			panelContainerTemplateId: 'fragment-63df45f4dd4647c7821531bc639946721860225857_panelContainerTemplate',
+			panelTemplateId: 'fragment-63df45f4dd4647c7821531bc639946721860225857_panelTemplate',
+			panelLoadingIndicatorTemplateId: 'fragment-63df45f4dd4647c7821531bc639946721860225857_panelLoadingIndicatorTemplate',
+			loadUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=63df45f4dd4647c7821531bc63994672\u0026_wid=fragment-63df45f4dd4647c7821531bc639946721860225857\u0026_ct=plugin_000\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Unknown\u0026_p=administrationUrl%3D%252Fadministration%253FreturnUrl%253D%25252Farm-community-blogs%25252Fb%25252Fembedded-and-microcontrollers-blog%25252Fposts%25252Fwalking-around-the-mbed-zone-at-techcon-2015%26badgedPanelsCallbackUrl%3Dhttps%253A%252F%252Fcommunity.arm.com%252Fcallback.ashx%253F__type%253DTelligent.Evolution.CoreServices.Administration.Plugins.BadgeablePanelsServicePlugin%25252C%252520Telligent.Evolution.Platform\u0026_pt=Telligent.Evolution.CoreServices.Administration.Plugins.ContextualPanelServicePlugin%2C%20Telligent.Evolution.Platform\u0026_cft=Other\u0026_cf=load.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+			searchUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=63df45f4dd4647c7821531bc63994672\u0026_wid=fragment-63df45f4dd4647c7821531bc639946721860225857\u0026_ct=plugin_000\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Unknown\u0026_p=administrationUrl%3D%252Fadministration%253FreturnUrl%253D%25252Farm-community-blogs%25252Fb%25252Fembedded-and-microcontrollers-blog%25252Fposts%25252Fwalking-around-the-mbed-zone-at-techcon-2015%26badgedPanelsCallbackUrl%3Dhttps%253A%252F%252Fcommunity.arm.com%252Fcallback.ashx%253F__type%253DTelligent.Evolution.CoreServices.Administration.Plugins.BadgeablePanelsServicePlugin%25252C%252520Telligent.Evolution.Platform\u0026_pt=Telligent.Evolution.CoreServices.Administration.Plugins.ContextualPanelServicePlugin%2C%20Telligent.Evolution.Platform\u0026_cft=Other\u0026_cf=search.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+			rootPanelUrl: '#_cptype=root',
+			previewPanelUrl: '#_cptype=panel\u0026_cpcontexttype=Theme\u0026_cppanelid=a81369a5-aa60-4034-8a25-07df22cd9c42',
+			customPanelTemplateId: 'fragment-63df45f4dd4647c7821531bc639946721860225857_customPanelTemplate',
+			hasCategories:  true ,
+			supportsExplicitOnly:  false ,
+			manageCommunityText: '\tManage Arm Community',
+			navigationConfirmationText: 'Are you sure you want to leave? Changes you made may not be saved.',
+			totalBadgeCount:  0 		});
+	});
+}
+</script><title>Walking around the mbed Zone at TechCon 2015 - Embedded and Microcontrollers blog - Arm Community blogs - Arm Community</title>
+<link rel="canonical" href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/walking-around-the-mbed-zone-at-techcon-2015" /><meta key="og:site_name" content="Arm Community" />
+<meta name="GENERATOR" content="Telligent Community 12" />
+<meta name="description" content="From the tiniest of sensors to high-end board computers, ARM provides a range of low-power processors to address the ever-expanding embedded market." />
+<meta name="keywords" content="arm, embedded, sbc" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://community.arm.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/arm_2D00_embedded_2D00_blog.jpg" />
+<meta property="og:url" content="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/walking-around-the-mbed-zone-at-techcon-2015" />
+<meta property="og:description" content="As presented in Bee Hayes-Thakore blog &lt;a href=&quot;https://community.arm.com/groups/internet-of-things/blog/2015/11/09/accelerating-iot-at-scale-exciting-new-products-services-and-a-peek-into-the-future-from-arm-techcon-2015&quot;&gt;here&lt;/a&gt;, and in my preview blog &lt;a href=&quot;https://community.arm.com/groups/internet-of-things/blog/2015/10/27/mbed-zone-at-arm-techcon-2015&quot;&gt;here&lt;/a&gt;, the mbed Zone is one of the central pieces of this year&#39;s Techcon.The first thing when walking around the showroom, is seeing how big the zone is! Where to start?! Here is ..." />
+<meta property="og:title" content="Walking around the mbed Zone at TechCon 2015" /><link type="text/css" rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-39888112961743d6b482debae733b37d-s-00000000000000000000000000000000-0-theme_5F00_000-theme-f-1-637977115750200000-https-communityarmcom-443/screen.less?_=638878424601083356" /><link type="text/css" rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-39888112961743d6b482debae733b37d-s-00000000000000000000000000000000-0-theme_5F00_000-theme-f-1-637977115750200000-https-communityarmcom-443/print.css?_=638878424490603266" media="print" /><link type="text/css" rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-39888112961743d6b482debae733b37d-s-00000000000000000000000000000000-0-theme_5F00_000-theme-f-1-637977115750200000-https-communityarmcom-443/handheld.less?_=638878424432033201" media="only screen and (max-width: 750px)" /><link type="text/css" rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-39888112961743d6b482debae733b37d-s-00000000000000000000000000000000-0-theme_5F00_000-theme-f-1-637977115750200000-https-communityarmcom-443/tablet.less?_=638878424490433334" media="only screen and (min-device-width: 751px) and (max-device-width: 1024px) and (orientation: landscape), only screen and (min-device-width: 751px) and (max-device-width: 1024px) and (orientation: portrait)" /><link type="text/css" rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-39888112961743d6b482debae733b37d-s-00000000000000000000000000000000-0-theme_5F00_000-theme-f-1-637977115750200000-https-communityarmcom-443/analyticswidget.css?_=638878424437693221" /><link type="text/css" rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-39888112961743d6b482debae733b37d-s-00000000000000000000000000000000-0-theme_5F00_000-theme-f-1-637977115750200000-https-communityarmcom-443/armhandheld.less?_=638878424436043198" media="only screen and (max-width: 750px)" /><link type="text/css" rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-39888112961743d6b482debae733b37d-s-00000000000000000000000000000000-0-theme_5F00_000-theme-f-1-637977115750200000-https-communityarmcom-443/Arm.less?_=638878424399693169" /><link type="text/css" rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-39888112961743d6b482debae733b37d-s-00000000000000000000000000000000-0-theme_5F00_000-theme-f-1-637977115750200000-https-communityarmcom-443/cssoverrides.css?_=638878424434853212" /><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+
+	<link rel="icon" type="image/png" href="https://community.arm.com/cfs-file/__key/themefiles/tc-s-39888112961743d6b482debae733b37d-00000000000000000000000000000000-favicon/arm_2D00_icon_2D00_256x256.png">
+	<link rel="apple-touch-icon" href="https://community.arm.com/cfs-file/__key/themefiles/tc-s-39888112961743d6b482debae733b37d-00000000000000000000000000000000-favicon/arm_2D00_icon_2D00_256x256.png">
+
+<script type="text/javascript" src="https://community.arm.com/cfs-filesystemfile/__key/themefiles/f-s-39888112961743d6b482debae733b37d-jsfiles/theme.js?_=637977115766032852"></script><script type="text/javascript" src="https://community.arm.com/cfs-filesystemfile/__key/themefiles/f-s-39888112961743d6b482debae733b37d-jsfiles/analytics.js?_=637977115766344964"></script>
+<script type="text/javascript">
+jQuery(function(j){
+	j.telligent.evolution.theme.social.register({
+		dockedSidebars:  true ,
+		adaptiveHeaders:  true ,
+		adaptiveHeadersMinWidth: 670
+	})
+});
+</script>
+
+
+
+<!--Clear bit-->
+<script class="optanon-category-C0003" type="text/plain" src="https://reveal.clearbit.com/v1/companies/reveal?authorization=pk_acf6fc4fd7e2fec55c586040e1705149&variable=reveal" async></script>
+<!--Clear bit-->
+<!-- Arm tag manager -->
+<script src="https://developer.arm.com/arm-tag-manager/developer.arm.com/atm.js" defer></script>
+<!-- End Arm tag manager -->
+<!-- Coveo Script -->
+<script src="https://developer.arm.com/shared-components/0.2.101315/coveopageview.shared-components.js" defer></script>
+<!-- End Coveo script-->
+<style>
+#onetrust-pc-sdk h3,
+#onetrust-pc-sdk h4 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+</style><link rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-b2511d65fd5f490299563e47e3fd280f-b-4677d8ae29054ea69268132b4c46eb85-0-header_5F00_0010-953-f-3-637812011795630000-https-communityarmcom-443/style.less?_=638878424627623496"  />
+<link rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-b2511d65fd5f490299563e47e3fd280f-b-4677d8ae29054ea69268132b4c46eb85-0-ppost_5F00_0000-25917-f-3-638652960822470000-https-communityarmcom-443/style.less?_=638878424628983458"  />
+<link rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-b2511d65fd5f490299563e47e3fd280f-b-4677d8ae29054ea69268132b4c46eb85-0-ppost_5F00_0000-25918-f-3-638139582696030000-https-communityarmcom-443/style.less?_=638878424629423479"  />
+<link rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-b2511d65fd5f490299563e47e3fd280f-b-4677d8ae29054ea69268132b4c46eb85-0-ppost_5F00_0000-25919-f-3-638139582696030000-https-communityarmcom-443/style.less?_=638878424631563412"  />
+<link rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-b2511d65fd5f490299563e47e3fd280f-b-4677d8ae29054ea69268132b4c46eb85-0-ppost_5F00_0000-25923-f-3-638514541959100000-https-communityarmcom-443/style.less?_=638878424633093493"  />
+<link rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-b2511d65fd5f490299563e47e3fd280f-b-4677d8ae29054ea69268132b4c46eb85-0-ppost_5F00_0000-25926-f-3-638139582696030000-https-communityarmcom-443/style.less?_=638878424633513481"  />
+<link rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-b2511d65fd5f490299563e47e3fd280f-b-4677d8ae29054ea69268132b4c46eb85-0-ppost_5F00_0000-25927-f-3-638139582696030000-https-communityarmcom-443/style.less?_=638878424635853411"  />
+<link rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/uifiles/h-0000000069691b63-b2511d65fd5f490299563e47e3fd280f-b-4677d8ae29054ea69268132b4c46eb85-0-footer_5F00_0010-934-f-3-638478339320000000-https-communityarmcom-443/style.less?_=638878424637593407"  /><link rel="pingback" href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/pingback" /><link rel="alternate" type="application/rss+xml" title="Embedded and Microcontrollers blog (RSS 2.0)" href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/rss"  /><link rel="alternate" type="application/atom+xml" title="Embedded and Microcontrollers blog  (Atom 1.0)" href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/atom"  /><link rel="alternate" type="application/rss+xml" title="Embedded and Microcontrollers blog - All Comments (RSS 2.0)" href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/rsscomments"  /><link rel="alternate" type="application/rss+xml" title="Embedded and Microcontrollers blog - Comments for this post (RSS 2.0)" href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/rsscomments?WeblogPostID=11210"  /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/rsd" /><link rel="wlwmanifest" type="application/wlwmanifest+xml" title="WLWManifest" href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/wlwmanifest" /></head><body spellcheck="true"><!-- Arm Tag Manager (noscript) -->
+<noscript><iframe src="https://developer.arm.com/arm-tag-manager/developer.arm.com/atm.js" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<form action="" method="POST">
+
+
+<div class="single-column header-fragments evolution-reflow-container" data-related="_h_page" id="_h_singlecolumn" style = "display:none"></div><div class="header-fragments evolution-reflow-container" data-related="_h_singlecolumn" id="_h_page"  data-reflow-width="670"><div class="layout">
+<div class="layout-header"></div>
+<div class="layout-content header-top-content" id="_h_layout"><div class="layout-region header" id="_h_header">
+<div class="layout-region-inner header"><div class="content-fragment site-banner no-wrapper responsive-1 	all
+" id="header-953" data-reflow="_h_header,_h_singlecolumn,1,0,0">
+<div class="content-fragment-content">
+
+
+
+
+
+
+
+	
+				
+		
+					
+			
+		
+		
+		
+					
+
+
+	
+<style>
+.header-fragments .layout .header-top-content .layout-region.header {
+	background-color: #FFFFFF;
+}
+
+.banner.site fieldset ul.field-list li.field-item .field-item-input input {
+	background-color: #FFFFFF;
+}
+
+
+.header-fragments .header-top-content .layout-region.header .banner.site .navigation-list ul a,
+.header-fragments .header-top-content .layout-region.header .banner.site .navigation-list ul a.active,
+.header-fragments .header-top-content .layout-region.header .banner.site fieldset ul li .field-item-input input,
+.header-fragments .header-top-content .layout-region.header .banner.site fieldset ul li .field-item-input input.active,
+.header-fragments .header-top-content .layout-region.header .banner.site fieldset ul.field-list li.field-item .field-item-input:after,
+.header-fragments .header-top-content .layout-region.header .banner.site fieldset ul.field-list li.field-item .field-item-input input.active,
+.header-fragments .header-top-content .layout-region.header .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a {
+	color: #263238;
+}
+.header-fragments .header-top-content .layout-region.header .banner.site fieldset ul.field-list li.field-item .field-item-input input::placeholder {
+	color: #263238;
+}
+.header-fragments .header-top-content .layout-region.header .banner.site fieldset ul.field-list li.field-item .field-item-input input:-ms-input-placeholder {
+	color: #263238;
+}
+.header-fragments .header-top-content .layout-region.header .banner.site fieldset ul.field-list li.field-item .field-item-input input::-ms-input-placeholder {
+	color: #263238;
+}
+
+.header-fragments:hover .header-top-content .layout-region.header .banner.site .navigation-list ul a,
+.header-fragments:hover .header-top-content .layout-region.header .banner.site .navigation-list ul a.active,
+.header-fragments .header-top-content .layout-region.header .banner.site .navigation-list ul a.active,
+.header-fragments:hover .header-top-content .layout-region.header .banner.site fieldset ul li .field-item-input input,
+.header-fragments:hover .header-top-content .layout-region.header .banner.site fieldset ul li .field-item-input input.active,
+.header-fragments:hover .header-top-content .layout-region.header .banner.site fieldset ul.field-list li.field-item .field-item-input:after,
+.header-fragments:hover .header-top-content .layout-region.header .banner.site fieldset ul.field-list li.field-item .field-item-input input.active,
+.header-fragments .header-top-content .layout-region.header .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a.subnav-open,
+.header-fragments .header-top-content .layout-region.header .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a.links-expanded,
+.header-fragments:hover .header-top-content .layout-region.header .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a {
+	color: #263238;
+}
+.header-fragments:hover .header-top-content .layout-region.header .banner.site fieldset ul.field-list li.field-item .field-item-input input::placeholder {
+	color: #263238;
+}
+.header-fragments:hover .header-top-content .layout-region.header .banner.site fieldset ul.field-list li.field-item .field-item-input input:-ms-input-placeholder {
+	color: #263238;
+}
+.header-fragments:hover .header-top-content .layout-region.header .banner.site fieldset ul.field-list li.field-item .field-item-input input::-ms-input-placeholder {
+	color: #263238;
+}
+.header-fragments .header-top-content .layout-region.header .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a.selected:after {
+	background-color: #263238;
+}
+
+
+
+
+.single-column .banner.site {
+	background-color: #FFFFFF;
+}
+.single-column .banner.site > .navigation-list.handheld ul a,
+.single-column .banner.site .container.handheld .user-links ul a {
+	color: #263238;
+}
+.single-column .banner.site > .navigation-list.handheld ul a.active,
+.single-column .banner.site .container.handheld .user-links ul a.active {
+	color: #263238;
+}
+</style>
+
+<div class="banner site  all   with-site-navigation " id="header-953_banner">
+			<div class="avatar">
+																		<a href="https://community.arm.com/" title="Home"  class="ui-tip" >
+					<img src="https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-imagefileviewer/widgetcontainerfiles-39888112961743d6b482debae733b37d-s-AAAAAAAAAAAAAAAAAAAAAA-header-header-Ci5mW5NVy0_2D00_hMIwlo_2D00_Z8Aw-logo/ArmCommunityLogo.png_2D00_125x44.png?_=637672148597594424" border="0px" alt="Arm Community" />
+				</a>
+					</div>
+
+					<div class="name hidden">Arm Community</div>
+		
+								<div class="navigation-list site-links" id="header-953_bannerSiteLinks">
+				<ul>
+					<li class="navigation-list-item">
+						<a href="#"
+																						class="site-navigation group ui-tip"
+													id="header-953_site">Site</a>
+					</li>
+				</ul>
+			</div>
+						<fieldset class="search" id="header-953_searchFields">
+			<ul class="field-list">
+				<li class="field-item">
+					<span class="field-item-description hidden">
+						<label>Search</label>
+					</span>
+					<span class="field-item-input">
+						<input autocomplete="off" type="search" placeholder="Search" id="header-953_Search" value=""   />
+					</span>
+				</li>
+			</ul>
+		</fieldset>
+								<div class="navigation-list user-links" id="header-953_bannerLinks">
+					<ul>
+																																																										<li class="navigation-list-item">
+								<a href="/login?ReturnUrl=%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015" class="internal-link user with-icon ui-tip" title="Join or sign in">User</a>
+							</li>
+																																																												</ul>
+				</div>
+						<div class="navigation-list handheld">
+			<ul>
+				<li class="navigation-list-item">
+					<a href="#" class="site" id="header-953_handheldSiteLinksLink" >Site</a>
+				</li>
+				<li class="navigation-list-item">
+					<a href="#" class="search" id="header-953_handheldSearchFieldsLink">Search</a>
+				</li>
+				<li class="navigation-list-item">
+																		<a href="/login?ReturnUrl=%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015" class="user">User</a>
+															</li>
+			</ul>
+		</div>
+		<div class="container handheld">
+			<fieldset class="search" style="display:none" id="header-953_handheldSearchFields"></fieldset>
+			<div class="user-links" style="display:none" id="header-953_handheldBannerLinks"></div>
+		</div>
+	</div>
+
+</div>
+<div class="content-fragment-footer"></div>
+</div>
+</div>
+</div>
+<div class="layout-region content" id="_h_content">
+<div class="layout-region-inner content"><div class="content-fragment group-banner no-wrapper with-spacing responsive-1 " id="header-778" data-reflow="_h_content,_h_singlecolumn,1,1,1">
+<div class="content-fragment-content">
+
+
+
+	
+	
+		
+		
+		
+<style>
+		
+		
+		.single-column.header-fragments,
+		.header-fragments .layout .header-top-content .layout-region.content,
+		.header-fragments .layout .header-top-content.with-adaptable-elements .layout-region.content {
+			background: #11809F;
+		}
+
+	
+				.single-column.header-fragments,
+		.header-fragments .layout .header-top-content .layout-region.content,
+		.header-fragments .layout .header-top-content.with-adaptable-elements .layout-region.content {
+			border-bottom: 0px;
+		}
+		.header-fragments .layout .header-top-content,
+		.header-fragments .layout .header-top-content.scrolled {
+			box-shadow: none;
+		}
+	
+	/* parent navigation */
+	.banner.context.slim .hierarchy > .parent-navigation a.more:before,
+	.banner.context > .hierarchy > .parent-navigation ul li a,
+	.banner.context > .hierarchy > .parent-navigation ul li a:hover,
+	.banner.context > .hierarchy > .parent-navigation ul li a:before,
+	.scrolled .banner.context > .hierarchy > .parent-navigation a.more:before,
+	.scrolled .banner.context > .hierarchy > .parent-navigation ul li a:before,
+	.banner.context > .hierarchy > .parent-navigation ul li a.more.links-expanded,
+	.banner.context > .hierarchy > .parent-navigation ul li a.more.links-expanded:before,
+	.banner.context > .hierarchy > .parent-navigation ul li a.more:before {
+		color: #FFFFFF;
+	}
+
+	/* hierarchy components */
+	.banner.context > .hierarchy > .current-hierarchy > .hierarchy-component,
+	.banner.context > .hierarchy > .current-hierarchy > .hierarchy-component a,
+	.banner.context > .hierarchy > .current-hierarchy > .hierarchy-component:before,
+	.banner.context > .hierarchy > .current-hierarchy > .hierarchy-component a:hover {
+		color: #FFFFFF;
+	}
+
+	/* applications */
+	.banner.context > .hierarchy > .current-hierarchy > .applications ul a,
+	.banner.context > .hierarchy > .current-hierarchy > .applications ul a:hover,
+	.banner.context > .hierarchy > .current-hierarchy > .applications ul a.more,
+	.banner.context:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more,
+	.banner.context:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more:before,
+	.banner.context.home > .hierarchy > .current-hierarchy > .applications ul a.more:before,
+	.scrolled .banner.context .hierarchy .current-hierarchy > .applications ul a.more,
+	.scrolled .banner.context .hierarchy .current-hierarchy > .applications ul a.more:before,
+	.banner.context.slim:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more,
+	.banner.context.slim:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more:before,
+	.scrolled .banner.context:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more,
+	.scrolled .banner.context:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more:before {
+		border-color: #FFFFFF;
+		color: #FFFFFF;
+	}
+	.banner.context.home > .hierarchy > .current-hierarchy > .applications ul a.links-expanded,
+	.banner.context.home > .hierarchy > .current-hierarchy > .applications ul a.links-expanded:before,
+	.banner.context.home > .hierarchy > .current-hierarchy > .applications ul a.more.links-expanded:before,
+	.scrolled .banner.context .hierarchy .current-hierarchy > .applications ul a.more.links-expanded,
+	.scrolled .banner.context .hierarchy .current-hierarchy > .applications ul a.more.links-expanded:before,
+	.banner.context:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more.links-expanded,
+	.banner.context:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more.links-expanded:before,
+	.banner.context.slim:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more.links-expanded,
+	.banner.context.slim:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more.links-expanded:before,
+	.scrolled .banner.context:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more.links-expanded,
+	.scrolled .banner.context:not(.home) > .hierarchy > .current-hierarchy > .applications ul a.more.links-expanded:before {
+		background-color: #FFFFFF;
+		color: #11809F;
+		border-color: #FFFFFF;
+	}
+
+	/* new */
+	.banner.context > .new ul a,
+	.banner.context .navigation-list.new ul a.links-expanded,
+	.banner.context .navigation-list.new ul a.links-expanded:hover,
+	.banner.context .navigation-list.new ul a.links-expanded:active,
+	.banner.context .navigation-list.new ul a:hover {
+		background-color: #FFFFFF;
+		color: #11809F;
+	}
+	.single-column .banner.context > .new a,
+	.single-column .banner.context:not(.home) > .new a,
+	.single-column .banner.context.home > .new a {
+		color: #FFFFFF;
+		border-color: #FFFFFF;
+	}
+
+	/* inheriting application banner */
+	.banner.application,
+	.banner.application .navigation-list a,
+	.banner.application .name .title a {
+		color: #FFFFFF;
+	}
+	.banner.application::after {
+		background-color: #FFFFFF;
+	}
+
+
+	/* custom navigation widget */
+	.header-fragments .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a,
+	.header-fragments .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a:hover {
+		color: #FFFFFF;
+	}
+	.header-fragments .content-fragment.navigation-custom:after,
+	.header-fragments .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a.selected:after {
+		background-color: #FFFFFF;
+	}
+	.header-fragments:hover .header-top-content .layout-region.content .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a {
+		color: #FFFFFF;
+	}
+	.header-fragments .header-top-content .layout-region.content .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a.links-expanded,
+	.header-fragments .header-top-content .layout-region.content .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a.subnav-open,
+	.header-fragments:hover .header-top-content .layout-region.content .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a.links-expanded,
+	.header-fragments:hover .header-top-content .layout-region.content .content-fragment.navigation-custom .navigation-list[data-direction='horizontal'] a.subnav-open {
+		background-color: #FFFFFF;
+		color: #11809F;
+	}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<div class="banner context  slim inherited   with-application    ">
+	<div class="avatar">
+		<a href="https://community.arm.com/arm-community-blogs/"  >
+			<img src="https://community.arm.com/cfs-file/__key/communityserver-components-groupavatars/default.svg" style="width: 68px;height:68px;overflow:hidden;background:url(&#39;https://community.arm.com/cfs-file/__key/communityserver-components-groupavatars/default.svg&#39;) center center no-repeat;background-size:cover;" alt="Arm Community blogs" />
+		</a>
+	</div>
+
+	<div class="hierarchy">
+
+					
+		
+		<div class="current-hierarchy">
+
+							<div class="container hierarchy-component">
+					<a href="https://community.arm.com/arm-community-blogs/"><span  >Arm Community blogs</span></a>
+				</div>
+			
+												<span class="application hierarchy-component">
+						<a href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog"><span >Embedded and Microcontrollers blog</span></a>
+					</span>
+													<span class="content hierarchy-component">
+						<a href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/walking-around-the-mbed-zone-at-techcon-2015"><span >Walking around the mbed Zone at TechCon 2015</span></a>
+					</span>
+							
+							<div  class="navigation-list applications"  >
+					<div class="ui-links" data-minlinks="0"  data-maxlinks="0" data-direction="vertical"  id="header-778_applicationNavigation">
+						<ul>
+																																																<li class="navigation-list-application  selected">
+									<a href="/arm-community-blogs/b" class="internal-link view-application weblog multiple Blogs  selected"><span></span>Blogs</a>
+								</li>
+																																			<li class="navigation-list-application ">
+									<a href="/arm-community-blogs/mentions" class="internal-link group-mention-list Mentions "><span></span>Mentions</a>
+								</li>
+																																			<li class="navigation-list-application ">
+									<a href="/arm-community-blogs/subgrouplist" class="internal-link sub-group-list Sub-Groups "><span></span>Sub-Groups</a>
+								</li>
+																																			<li class="navigation-list-application ">
+									<a href="/arm-community-blogs/tags" class="internal-link view-tags Tags "><span></span>Tags</a>
+								</li>
+																	<li class="navigation-list-item">
+								<a href="#" class="more" data-more>Jump...</a>
+							</li>
+							<li class="navigation-list-item">
+								<a href="#" data-cancel>Cancel</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+		</div>
+
+	</div>
+
+	
+	
+		</div>
+
+</div>
+<div class="content-fragment-footer"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout-footer"></div>
+</div><input type="hidden" name="_h_state" id="_h_state" value="" /></div>
+<div class="single-column content-fragment-page post evolution-reflow-container" data-related="_p_page" id="_p_singlecolumn" style = "display:none"></div><div class="content-fragment-page post evolution-reflow-container" data-related="_p_singlecolumn" id="_p_page"  data-reflow-width="670"><div class="layout">
+<div class="layout-header"></div>
+<div class="layout-content sidebar-left-content-right" id="_p_layout"><div class="layout-region left-sidebar" id="_p_left-sidebar">
+<div class="layout-region-inner left-sidebar"><div class="content-fragment browse-blogs top-border with-spacing with-header responsive-1 " id="fragment-25914" data-reflow="_p_left-sidebar,_p_singlecolumn,1,2,0">
+<div class="content-fragment-header">
+	More blogs in Arm Community blogs
+		</div>
+<div class="content-fragment-content">
+
+
+
+<div id="pifragment-25914-paged-content">
+
+
+
+	
+
+
+
+
+    <ul class="content-list content simple margin-bottom tabular">
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/ai-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/ai-blog">AI blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/announcements">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/announcements">Announcements</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog">Architectures and Processors blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/automotive-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/automotive-blog">Automotive blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog">Embedded and Microcontrollers blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/internet-of-things-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/internet-of-things-blog">Internet of Things (IoT) blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/laptops-and-desktops-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/laptops-and-desktops-blog">Laptops and Desktops blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/mobile-graphics-and-gaming-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/mobile-graphics-and-gaming-blog">Mobile, Graphics, and Gaming blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/operating-systems-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/operating-systems-blog">Operating Systems blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/servers-and-cloud-computing-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/servers-and-cloud-computing-blog">Servers and Cloud Computing blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/soc-design-and-simulation-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/soc-design-and-simulation-blog">SoC Design and Simulation blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+	<li class="content-item with-href" data-href="https://community.arm.com/arm-community-blogs/b/tools-software-ides-blog">
+
+		<div class="name cell">
+			<h3>
+								                	<a class="internal-link view-application" href="https://community.arm.com/arm-community-blogs/b/tools-software-ides-blog">Tools, Software and IDEs blog</a>
+							</h3>
+					</div>
+
+			</li>
+
+    </ul>
+
+<div class="pager ui-page" data-currentpage="0" data-pagesize="20" data-totalitems="12" data-pagekey="pifragment-25914" data-pagedcontenturl="https://community.arm.com/utility/scripted-file.ashx?_fid=25914&amp;_wid=fragment-25914&amp;_ct=ppost_0000&amp;_ctt=a3b17ab0af5f11dda3501fcf55d89593&amp;_ctc=4677d8ae29054ea69268132b4c46eb85&amp;_ctn=b2511d65fd5f490299563e47e3fd280f&amp;_ctd=0&amp;_ep=0&amp;_rt=Web&amp;_cft=Other&amp;_cf=list.vm&amp;_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015" data-pagedcontentwrapperid="pifragment-25914-paged-content" data-pagedcontentpagingevent="ui.page.pifragment-25914.paging" data-pagedcontentpagedevent="ui.page.pifragment-25914.paged" data-loadonanyhashchange="true" data-loadingindicator="true" data-configuration="PagedContentFile=list.vm&amp;LoadingIndicator=true&amp;LoadOnAnyHashChange=true" ></div>
+</div>
+
+		</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment blog-details top-border with-spacing with-header responsive-2 " id="fragment-25915" data-reflow="_p_left-sidebar,_p_singlecolumn,2,2,1">
+<div class="content-fragment-header">
+Tags
+	</div>
+<div class="content-fragment-content">
+
+
+
+
+<div class="content-details">
+
+						<div class="content-tags">
+				<ul class="tag-list">
+											<li class="tag-item">
+					<a href="/tags/techcon2015" rel="tag">techcon2015</a>
+				</li>
+														<li class="tag-item">
+					<a href="/tags/embedded_2D00_board" rel="tag">embedded-board</a>
+				</li>
+														<li class="tag-item">
+					<a href="/tags/internet_2D00_of_2D00_things" rel="tag">internet-of-things</a>
+				</li>
+														<li class="tag-item">
+					<a href="/tags/Embedded" rel="tag">Embedded</a>
+				</li>
+														<li class="tag-item">
+					<a href="/tags/mbed_5F00_os" rel="tag">mbed_os</a>
+				</li>
+														<li class="tag-item">
+					<a href="/tags/Mbed" rel="tag">Mbed</a>
+				</li>
+														<li class="tag-item">
+					<a href="/tags/Internet%2bof%2bThings%2b_2800_IoT_2900_" rel="tag">Internet of Things (IoT)</a>
+				</li>
+														<li class="tag-item">
+					<a href="/tags/cloud" rel="tag">cloud</a>
+				</li>
+									</ul>
+			</div>
+			
+	<ul class="attribute-list">
+
+				
+		
+					<li class="attribute-item like ">
+				<span class="attribute-name"></span>
+				<span class="attribute-value">
+															<span  class="ui-presentcontent ui-like ui-tip" data-presentcontents="cf76737ce9d243e19dd9f1c206b4dc9c|f7d226abd59f475c9d224a79e3f0ec07|"  data-tipcontent="initialmessage" data-contentid="cf76737c-e9d2-43e1-9dd9-f1c206b4dc9c" data-contenttypeid="f7d226ab-d59f-475c-9d22-4a79e3f0ec07" data-initialcount="1" data-initialstate="false" data-readonly="true" data-initialmessage="&lt;a href=&quot;/members/daith&quot; class=&quot;internal-link view-user-profile&quot;>daith&lt;/a> likes this" data-format="{count}" data-configuration="Format=%7Bcount%7D&amp;IncludeLike=true&amp;IncludeTip=true" ></span>
+				</span>
+			</li>
+		
+			</ul>
+</div>
+
+	</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment blog-links top-border with-spacing with-header responsive-2 " id="fragment-25916" data-reflow="_p_left-sidebar,_p_singlecolumn,2,2,2">
+<div class="content-fragment-header">
+Actions
+			</div>
+<div class="content-fragment-content">
+
+
+
+	<div class="ui-links navigation-list links" data-minlinks="2" data-direction="vertical" data-minlinks="10" data-maxlinks="10">
+		<ul class="navigation-list">
+																																					<li class="navigation-list-item"><a href="/arm-community-blogs/b/mainfeed?Type=BlogsOnly" class="internal-link rss"><span></span>RSS</a></li>
+																															                    			    				  	        <li class="navigation-list-item">
+	            <a href="#" data-more>More</a>
+	        </li>
+	        <li class="navigation-list-item">
+	            <a href="#" data-cancel>Cancel</a>
+	        </li>
+		</ul>
+	</div>
+
+			</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment social-shares no-wrapper responsive-1 " id="fragment-25917" data-reflow="_p_left-sidebar,_p_singlecolumn,1,2,3">
+<div class="content-fragment-content">
+
+
+<script>
+    function sharePage(shareUrl) {
+        /*window.open(shareUrl+window.location.href, 'newwindow', 'width=900, height=500');*/
+        window.open(shareUrl+window.location.href, target="_blank");
+        return false;
+    }
+</script>
+
+<script language="javascript">
+    function fbshareCurrentPage()
+    {
+        window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', );
+    return false; }
+</script>
+
+
+
+
+
+<div class="flex scrollWithUserVertical" >
+
+
+   
+    <div>
+                <a id="Facebook (En)" class="highlightit" href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook">
+                <i class="fab fa-fw fa-facebook-f" aria-hidden="true"></i>
+                </a>
+    </div>
+    
+
+
+
+    
+    <div>
+           <a id="Twitter (En)" class="highlightit" onclick=sharePage("https://twitter.com/share?")>
+               <i class="fab fa-fw fa-twitter" aria-hidden="true"></i>
+           </a>
+    </div>
+    
+     
+    
+    <div>
+    
+        <a id="Reddit (En)" class="highlightit" onclick=sharePage("https://www.reddit.com/submit?url=")>
+            <i aria-hidden="true" class="fab fa-fw fa-reddit-alien"></i>
+        </a>
+    </div>
+    
+    
+    
+    <div>
+        <a id="LinkedIN (En)" class="highlightit" onclick=sharePage("https://www.linkedin.com/shareArticle?mini=true&url=")>
+            <i aria-hidden="true" class="fab fa-fw fa-linkedin-in"></i>
+        </a>
+    </div>
+    
+    
+     
+    <div>
+       <script language="javascript">
+        function emailCurrentPage(){
+            window.location.href="mailto:?subject="+document.title+"&body="+escape(window.location.href);
+        }
+        </script>
+            
+            <a id="Email (En)" class="highlightit" href="javascript:emailCurrentPage()">
+            <i class="fas fa-fw fa-envelope" aria-hidden="false"></i>
+            </a>
+        </div>
+    
+</div></div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment more-content top-border with-spacing with-header responsive-2 
+			as-list
+		" id="fragment-25918" data-reflow="_p_left-sidebar,_p_singlecolumn,2,2,4">
+<div class="content-fragment-header">
+Related blog posts
+			</div>
+<div class="content-fragment-content">
+
+
+<div id="fragment-25918_delayedPagedContentWrapper"></div>
+
+
+
+
+
+			</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment more-content top-border with-spacing with-header responsive-1 
+			as-list
+		" id="fragment-25919" data-reflow="_p_left-sidebar,_p_singlecolumn,1,2,5">
+<div class="content-fragment-header">
+Related forum threads
+			</div>
+<div class="content-fragment-content">
+
+
+<div id="fragment-25919_delayedPagedContentWrapper"></div>
+
+
+
+
+
+			</div>
+<div class="content-fragment-footer"></div>
+</div>
+</div>
+</div>
+<div class="layout-region content" id="_p_content">
+<div class="layout-region-inner content"><div class="content-fragment blog-post-title no-wrapper with-spacing responsive-1 " id="fragment-25920" data-reflow="_p_content,_p_singlecolumn,1,1,6">
+<div class="content-fragment-content">
+
+
+<div class="content full text">
+	<h1 class="name">Walking around the mbed Zone at TechCon 2015</h1>
+</div>
+		</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div id="fragment-25921"></div>
+<div id="fragment-25922"></div>
+<div class="content-fragment blog-post-byline no-wrapper with-spacing responsive-1 " id="fragment-25923" data-reflow="_p_content,_p_singlecolumn,1,1,9">
+<div class="content-fragment-content">
+
+
+
+
+<div class="content-details">
+	<div class="content-author">
+		<div class="avatar">
+							<a href="/members/philippe_5f00_bressy">
+					<img src="https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-00-77-36/4U2NHYL7RBIY.jpg_2D00_80x80x2.jpg?_=636441004409572595" border="0px" alt="Philippe Bressy" />
+				</a>
+					</div>
+		<span class="user-name">
+							<a href="/members/philippe_5f00_bressy" class="internal-link view-user-profile">
+					Philippe Bressy
+				</a>
+					</span>
+	</div>
+	<div class="content-date">
+		<time datetime="2015-11-12T12:48:43.630Z">November 12, 2015</time>
+	</div>
+</div>
+
+		</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div id="fragment-25924"></div>
+<div class="content-fragment blog-post no-wrapper with-spacing responsive-1 " id="fragment-25925" data-reflow="_p_content,_p_singlecolumn,1,1,11">
+<div class="content-fragment-content">
+
+
+
+
+
+<div class="content full text">
+			<div class="content"><div><p><span style="line-height:1.5;">As presented in Bee Hayes-Thakore blog <a href="https://community.arm.com/groups/internet-of-things/blog/2015/11/09/accelerating-iot-at-scale-exciting-new-products-services-and-a-peek-into-the-future-from-arm-techcon-2015">here</a>, and in my preview blog <a href="https://community.arm.com/groups/internet-of-things/blog/2015/10/27/mbed-zone-at-arm-techcon-2015">here</a>, the mbed Zone is one of the central pieces of this year&#39;s Techcon.</span></p><p>The first thing when walking around the showroom, is seeing how big the zone is! Where to start?! Here is a non-exhaustive sample of what I saw in the mbed Zone area.</p><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/8244.IMG_5F00_8013.JPG"><img alt="IMG_8013.JPG" height="395" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/8244.IMG_5F00_8013.JPG" style="width:1033.33px;" width="1033" /></a><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/4454.IMG_5F00_8018.JPG"><img alt="IMG_8018.JPG" height="393" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/4454.IMG_5F00_8018.JPG" style="width:524px;" width="524" /></a><p>I must admit that I get pulled straight away towards the&#160; <a href="https://community.arm.com/community/arm-partner-directory/partner-ibm-international-business-machines">IBM (International Business Machines)</a> pod. I am curious - I see a few people whacking a dummy with a baseball bat. Seems like fun ! The demo is showcasing an example of monitoring safety on a building site, with a range of sensors on the workers safety helmet. Sensors, powered by mbed, can measure impacts, sounds, pressure etc..communicating via a long range wireless connection, and load all the way to the IBM foundation cloud the resulting information, for a real time safety status of the workers on the building site. To show this, indeed, what better way to swing full blast the baseball bat on the dummy&#8217;s head!</p><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/1715.IMG_5F00_8024.JPG"><img alt="IMG_8024.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/1715.IMG_5F00_8024.JPG" style="width:620px;height:827px;" width="675" /></a><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/6518.IMG_5F00_8048.JPG"><img alt="IMG_8048.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/6518.IMG_5F00_8048.JPG" style="width:620px;height:465px;" width="1200" /></a><p><iframe height="330" scrolling="no" src="https://www.youtube.com/embed/mv_nRuzs5nk?wmode=transparent" width="440">
+</iframe></p><p>Moving on to the <strong>Zebra </strong>stand, I see a showing of different boards, all using mbed 3.0 with mbed Device Server, communicating to the Zatar IoT cloud platform. You want to get started on your IoT application? it is quite simple, you select the board you are using, and you just point it at Zatar, and there you go!</p><p>I am next attracted to the&#160; <a href="https://community.arm.com/community/arm-partner-directory/partner-silicon-labs">Silicon Labs</a> pod, where I see someone wearing a dev platform on his wrist. This is Silicon Labs derivative of the mbed wearable reference design, which has a all the functionalities you&#8217;d think of a wearable nowadays, including heart rate monitor. Of course, this is mbed OS running on it! It will be on sale soon, for around $75.</p><p>Silicon Labs also show a Thread demo, with&#160; a mobile app controlling 20 lights via an mbed TLS connection to the web.</p><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/2744.IMG_5F00_8062.JPG"><img alt="IMG_8062.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/2744.IMG_5F00_8062.JPG" style="width:620px;height:827px;" width="675" /></a><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/5481.IMG_5F00_8060.JPG"><img alt="IMG_8060.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/5481.IMG_5F00_8060.JPG" style="width:620px;height:827px;" width="675" /></a><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/2350.IMG_5F00_8061.JPG"><img alt="IMG_8061.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/2350.IMG_5F00_8061.JPG" style="width:620px;height:465px;" width="1200" /></a><p>Right beside Silicon Labs, you can see a fun demo game of rolling dice by <strong>uBlox</strong>. The ublox platform is small enough to be able to fit in a dice. When you throw the 5 dices, the acceleration sensors detects the position of the dice, send that information via a Bluetooth LE connection, to the ublox ARM mbed powered gateway, and send the information to the IBM bluemix cloud. And you can see the results on the screen. I am wondering when this will be used in Las Vegas.</p><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/4401.IMG_5F00_8068.JPG"><img alt="IMG_8068.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/4401.IMG_5F00_8068.JPG" style="width:620px;height:827px;" width="675" /></a><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/5327.IMG_5F00_8070.JPG"><img alt="IMG_8070.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/5327.IMG_5F00_8070.JPG" style="width:620px;height:827px;" width="675" /></a><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/7450.IMG_5F00_8071.JPG"><img alt="IMG_8071.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/7450.IMG_5F00_8071.JPG" style="width:620px;height:827px;" width="675" /></a><p><iframe height="330" scrolling="no" src="https://www.youtube.com/embed/1Rl9Olxii4E?wmode=transparent" width="440">
+</iframe></p><p>Moving on, I see the <strong>wot.io</strong> pod being very busy, as it is an ARM TechCon Innovation Challenge IoT product finalist. Wot.io were presenting their Ship IoT with ARM mbed product.</p><p>which enables connecting data from ARM mbed supported devices with a wide selection of data services.</p><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/4338.IMG_5F00_8075.JPG"><img alt="IMG_8075.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/4338.IMG_5F00_8075.JPG" style="width:620px;height:465px;" width="1200" /></a><p>On the <a href="https://community.arm.com/community/arm-partner-directory/partner-microchip">Microchip</a>&#160;&#160; pod,&#160; there is an home automation example. Running on an SAMR21 platform, with mbed OS 3.0 and Thread connectivity, it&#160; controls a mesh network of lights, and motion control, say, for a door garage. The end device relays light sensor information to parent, which controls the networked lights.</p><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/1207.IMG_5F00_8090.JPG"><img alt="IMG_8090.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/1207.IMG_5F00_8090.JPG" style="width:620px;height:827px;" width="675" /></a><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/2781.IMG_5F00_8106.JPG"><img alt="IMG_8106.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/2781.IMG_5F00_8106.JPG" style="width:620px;height:465px;" width="1200" /></a><p>Continuing<span style="line-height:1.5;"> my tour, I see a couple of gentlemen heavily engaged in a 2015 version game of rock/paper/</span>scissors<span style="line-height:1.5;"> on the </span><a href="https://community.arm.com/community/arm-partner-directory/partner-freescale">Freescale</a><span style="line-height:1.5;"> pod. Using an FRDM-K64F board (The FRDM-K64F is an mbed platform for IBM Bluemix and Microsoft Azure cloud platform), two players use the mbed OS powered FRDM-K64F and FRDM-CR20A 802.15.4 wireless boards to play.</span></p><p><span style="line-height:1.5;">After several ties, there is a winner: the scissors win !</span></p><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/7485.IMG_5F00_8110.JPG"><img alt="IMG_8110.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/7485.IMG_5F00_8110.JPG" style="width:620px;height:465px;" width="1200" /></a><p>On the <a href="https://community.arm.com/community/arm-partner-directory/partner-stmicroelectronics">STMicroelectronics</a> booth, there is a demo of one the several ST Nucleo and ST Discovery platforms which are supported on mbed, completed with ST connectivity, motion and environmental boards.</p><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/0181.IMG_5F00_8041.JPG"><img alt="IMG_8041.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/0181.IMG_5F00_8041.JPG" style="width:620px;height:827px;" width="675" /></a><p>This is just a sample of what I saw on the mbed Zone, and it is impressive to see the various ways each partners</p><p>is using mbed technology. But that&#39;s not all. When I left the mbed Zone to find a place to write this blog,</p><p>I saw the wall of ARM mbed enabled boards. It seems I am not the only one impressed by the wide choice,</p><p>and stopping to reflect on it.</p><a href="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/8883.IMG_5F00_8036.JPG"><img alt="IMG_8036.JPG" height="900" src="/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-19-89/8883.IMG_5F00_8036.JPG" style="width:620px;height:827px;" width="675" /></a><p>Make sure you visit <a href="https://www.youtube.com/user/ARMflix" rel="nofollow">ARMFlix&#160; </a>for more videos on mbed and TechCon, and <a href="http://www.mbed.com/" rel="nofollow">mbed.com</a> for more news about mbed.</p></div><div style="clear:both;"></div></div>
+				</div>
+		</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment threaded-comments no-wrapper with-spacing responsive-1 " id="fragment-25926" data-reflow="_p_content,_p_singlecolumn,1,1,12">
+<div class="content-fragment-content">
+
+
+
+
+
+
+
+	
+	<div class="comment-form">
+	    
+
+
+
+
+
+
+
+<div id="fragment-25926_statisticsWrapper" class="comment-statistics"></div>
+
+		<div class="author"  data-authorprofileurl="" >
+			<div class="avatar">
+									<img src="https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-imagefileviewer/system-images/anonymous.gif_2D00_44x44x2.png?_=638878424557703331" border="0px" alt="Anonymous" />
+							</div>
+					</div>
+		<fieldset>
+			<ul class="field-list">
+				<li class="field-item post-body">
+					<span class="field-item-input">
+												
+						
+						
+						
+						
+													
+							
+												<textarea id="fragment-25926_fragment-25926_createEditor" style="width:100%, height:60px"></textarea>
+<script type="text/javascript">
+jQuery(function() { jQuery('#fragment-25926_fragment-25926_createEditor').evolutionHtmlEditor({ width: '100%', height: '60px', submittable: true,contentTypeId:'9262536b-49a3-4494-802f-04dff10424ed',enterToSubmitPrompt:'Enter to Login and Comment',submitLabel:'Login and Comment',beforeSubmitHtml:'',afterSubmitHtml:'',placeholder:'Leave a comment...',autoResize:true,enableEnterToSubmitToggle:true}).on('evolutionHtmlEditorSubmit', function(e) { (function() { jQuery.telligent.evolution.messaging.publish('widgets.comments.submit', { from: 'fragment-25926',  login: true  }); })(e.html); }); });</script>
+					</span>
+					<span class="field-item-validation" style="display: none;"></span>
+					<span class="processing"><span class="ui-loading" data-width="45" data-height="15"></span></span>
+				</li>
+			</ul>
+		</fieldset>
+	</div>
+
+	
+
+	<div class="best-replies-wrapper" id="fragment-25926_bestRepliesWrapper">
+		
+	</div>
+
+
+
+<div class="threaded-wrapper-outer">
+	<div class="typing-status-wrapper root"></div>
+	<div class="threaded-wrapper" id="fragment-25926_preRenderedWrapperId">
+		
+
+
+
+			
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+<div class="pager ui-page" data-currentpage="0" data-pagesize="5" data-totalitems="0" data-pagekey="pifragment-25926" data-configuration="" ></div>
+
+	
+	</div>
+</div>
+
+<div id="fragment-25926_editorWrapperWrapper" style="display:none">
+		
+	
+	
+	
+	
+	
+	<textarea id="fragment-25926_fragment-25926_replyEditor" style="width:100%, height:60px"></textarea>
+<script type="text/javascript">
+jQuery(function() { jQuery('#fragment-25926_fragment-25926_replyEditor').evolutionHtmlEditor({ width: '100%', height: '60px', submittable: true,contentTypeId:'9262536b-49a3-4494-802f-04dff10424ed',enterToSubmitPrompt:'Enter to Reply',submitLabel:'Reply',beforeSubmitHtml:'',afterSubmitHtml:'',placeholder:'',autoResize:true,enableEnterToSubmitToggle:true}).on('evolutionHtmlEditorSubmit', function(e) { (function() { jQuery.telligent.evolution.messaging.publish('widgets.threadedComments.submit') })(e.html); }); });</script>
+</div>
+
+
+
+
+			</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment blog-post-list top-border with-spacing with-header responsive-1 " id="fragment-25927" data-reflow="_p_content,_p_singlecolumn,1,1,13">
+<div class="content-fragment-header">
+<a class="internal-link view-application weblog" href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog"><span></span>Embedded and Microcontrollers blog</a>
+		</div>
+<div class="content-fragment-content">
+
+
+
+
+										<div id="pifragment-25927-paged-content">
+
+
+
+
+			<ul class="content-list grid content margin-bottom">
+				
+
+			
+			
+<li class="content-item grid" data-href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/adapting-kubernetes-high-performance-iot-edge-deployments">
+
+	<div class="content grid abbreviated">
+					<div class="avatar">
+												<a href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/adapting-kubernetes-high-performance-iot-edge-deployments">
+					<img src="https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-secureimagefileviewer/communityserver-blogs-components-weblogfiles-00-00-00-19-89/6177.Picture1.jpg_2D00_600x338x2.jpg?_=638598278380036605" border="0px" />
+				</a>
+			</div>
+		
+		<div class="summary">
+			<h3 class="name">
+																									<a href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/adapting-kubernetes-high-performance-iot-edge-deployments">Adapting Kubernetes for high-performance IoT Edge deployments</a>
+							</h3>
+			<div class="author">
+				<div class="avatar">
+											<a href="/members/alexandrepf">
+							<img src="https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-06-40-84/4UAE7NNQZILZ.jpg_2D00_44x44x2.jpg?_=637236906908362724" border="0px" alt="Alexandre Peixoto Ferreira" />
+						</a>
+									</div>
+				<span class="user-name">
+											<a href="/members/alexandrepf" class="internal-link view-user-profile">
+							Alexandre Peixoto Ferreira
+						</a>
+									</span>
+			</div>
+			<div class="content">
+													<div class="post-summary">
+													In this blog post, we address heterogeneity in IoT edge deployments using Kubernetes. 
+											</div>
+							</div>
+		</div>
+
+		<div class="attributes">
+			<ul class="attribute-list">
+				<li class="attribute-item">
+					<span class="attribute-value"><time datetime="2024-08-21T09:00:00.000Z">August 21, 2024</time></span>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+</li>
+
+				
+
+			
+			
+<li class="content-item grid" data-href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/evolving-edge-computing-harnessing-heterogeneity">
+
+	<div class="content grid abbreviated">
+					<div class="avatar">
+												<a href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/evolving-edge-computing-harnessing-heterogeneity">
+					<img src="https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-secureimagefileviewer/communityserver-blogs-components-weblogfiles-00-00-00-19-89/background.png_2D00_600x338x2.png?_=638598278835317290" border="0px" />
+				</a>
+			</div>
+		
+		<div class="summary">
+			<h3 class="name">
+																									<a href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/evolving-edge-computing-harnessing-heterogeneity">Evolving Edge Computing and Harnessing Heterogeneity</a>
+							</h3>
+			<div class="author">
+				<div class="avatar">
+											<a href="/members/alexandrepf">
+							<img src="https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-06-40-84/4UAE7NNQZILZ.jpg_2D00_44x44x2.jpg?_=637236906908362724" border="0px" alt="Alexandre Peixoto Ferreira" />
+						</a>
+									</div>
+				<span class="user-name">
+											<a href="/members/alexandrepf" class="internal-link view-user-profile">
+							Alexandre Peixoto Ferreira
+						</a>
+									</span>
+			</div>
+			<div class="content">
+													<div class="post-summary">
+													This blog post identifies heterogeneity as an opportunity to create better edge computing systems.
+											</div>
+							</div>
+		</div>
+
+		<div class="attributes">
+			<ul class="attribute-list">
+				<li class="attribute-item">
+					<span class="attribute-value"><time datetime="2024-08-21T09:00:00.000Z">August 21, 2024</time></span>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+</li>
+
+				
+
+			
+			
+<li class="content-item grid" data-href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/deploying-hybrid-containerized-application-heterogeneous-edge-platform">
+
+	<div class="content grid abbreviated">
+					<div class="avatar">
+												<a href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/deploying-hybrid-containerized-application-heterogeneous-edge-platform">
+					<img src="https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-secureimagefileviewer/communityserver-blogs-components-weblogfiles-00-00-00-19-89/0257.GettyImages_2D00_1025155222-_2800_1_2900_.jpg_2D00_900x506x2.jpg_2D00_600x338x2.jpg?_=638598276265683826" border="0px" />
+				</a>
+			</div>
+		
+		<div class="summary">
+			<h3 class="name">
+																									<a href="https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/deploying-hybrid-containerized-application-heterogeneous-edge-platform">Demonstrating a Hybrid Runtime for Containerized Applications in High-Performance IoT Edge</a>
+							</h3>
+			<div class="author">
+				<div class="avatar">
+											<a href="/members/adeniyijones">
+							<img src="https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-00-53-00/4U4J64ZTTPID.jpg_2D00_44x44x2.jpg?_=636632026874494708" border="0px" alt="Chris Adeniyi-Jones" />
+						</a>
+									</div>
+				<span class="user-name">
+											<a href="/members/adeniyijones" class="internal-link view-user-profile">
+							Chris Adeniyi-Jones
+						</a>
+									</span>
+			</div>
+			<div class="content">
+													<div class="post-summary">
+													In this blog post, we show how a hybrid runtime and k3s can be used to deploy an application onto an edge platform that includes an embedded processor.
+											</div>
+							</div>
+		</div>
+
+		<div class="attributes">
+			<ul class="attribute-list">
+				<li class="attribute-item">
+					<span class="attribute-value"><time datetime="2024-08-21T09:00:00.000Z">August 21, 2024</time></span>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+</li>
+
+			</ul>
+	
+</div>
+</div>
+<div class="content-fragment-footer"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout-footer"></div>
+</div><input type="hidden" name="_p_state" id="_p_state" value="" /></div>
+<div class="single-column footer-fragments evolution-reflow-container" data-related="_f_page" id="_f_singlecolumn" style = "display:none"></div><div class="footer-fragments evolution-reflow-container" data-related="_f_singlecolumn" id="_f_page"  data-reflow-width="670"><div class="layout">
+<div class="layout-header"></div>
+<div class="layout-content content" id="_f_layout"><div class="layout-region content" id="_f_content">
+<div class="layout-region-inner content"><div class="content-fragment scripted-content-fragment no-wrapper responsive-1 " id="footer-933" data-reflow="_f_content,_f_singlecolumn,1,1,0">
+<div class="content-fragment-content">
+<style type="text/css" media="all">
+    .footer-fragments {
+        border: none;
+    }
+    .footer-fragments>.layout {
+        margin: 0;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="cors-footer" id="footer"></div>
+ 
+ 
+  <script> 
+   jQuery.ajax({
+          url:'https://cors.developer.arm.com/v1/Components/Footer/developer-arm-com/v1?isEncapsulated=true',
+          type:'get',
+          success: function(data){
+           //$jQuery('.cors-footer').html(data); 
+            jQuery('.cors-footer').append(data);
+          }
+        });
+       
+   
+   </script>
+  </div>
+<div class="content-fragment-footer"></div>
+</div>
+<div id="footer-934"></div>
+<div id="footer-935"></div>
+<div id="footer-936"></div>
+<div class="content-fragment scripted-content-fragment no-wrapper responsive-1 " id="footer-937" data-reflow="_f_content,_f_singlecolumn,1,1,4">
+<div class="content-fragment-content">
+<link rel="stylesheet" href="https://community.arm.com/cfs-filesystemfile/__key/widgetfiles/c2fa3a8d3de64c2eb8b80098eeb199fe-d/cookie_2D00_policy_2D00_consent.css?_=636402103197749728"  type="text/css" media="screen" />
+<script src="https://community.arm.com/cfs-filesystemfile/__key/widgetfiles/c2fa3a8d3de64c2eb8b80098eeb199fe-d/cookie_2D00_policy_2D00_consent.js?_=636402103197905987?auto_init=1&lang=en-US"></script></div>
+<div class="content-fragment-footer"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout-footer"></div>
+</div><input type="hidden" name="_f_state" id="_f_state" value="" /></div>	<script type="text/javascript" src="https://community.arm.com/cfs-filesystemfile/__key/widgetfiles/c9932b3229d8453892c87cef53db657e-d/ui.js?_=637812011797131551"></script>
+
+	<script type="text/html" id="header-953_site-banner-list-template">
+		<div>
+			<div class="multiple-column-list columns-1">
+				<div class="multiple-column-item column-1">
+					<ul class="content-list content">
+					</ul>
+					<div class="loading"><span class="ui-loading"></span></div>
+					<% if(footerContent) { %>
+						<div class="content-list-footer">
+							<%= footerContent %>
+						</div>
+					<% } %>
+				</div>
+			</div>
+		</div>
+	</script>
+
+			<script type="text/html" id="header-953_site-banner-notification-preferences-template">
+			<div class="notification-preference">
+				<span class="description">Do not notify me when someone <strong><%: notificationTypeName %></strong>?</span>
+				<a href="#" class="confirm internal-link button submit-button" data-notificationtypeid="<%: notificationTypeId %>">Confirm</a>
+				<a href="#" class="cancel internal-link button submit-button">Cancel</a>
+			</div>
+		</script>
+
+		<script type="text/html" id="header-953_site-banner-bookmark-filter-template">
+
+			<ul class="navigation-list filter">
+				<% if(contentTypeIds && contentTypeIds.length > 0) { %>
+					<li class="navigation-item conversations">
+						<a class="internal-link" href="#" data-contenttypeids="<%: contentTypeIds %>">Content</a>
+					</li>
+				<% } %>
+				<% if(applicationContentTypeIds && applicationContentTypeIds.length > 0) { %>
+					<li class="navigation-item conversations">
+						<a class="internal-link" href="#" data-contenttypeids="<%: applicationContentTypeIds %>">Application</a>
+					</li>
+				<% } %>
+				<% if(containerTypes && containerTypes.length > 0) { %>
+					<% foreach(containerTypes, function(containerType) {  %>
+						<li class="navigation-item conversations">
+							<a class="internal-link" href="#" data-contenttypeids="<%: containerType.id %>"><%: containerType.name %></a>
+						</li>
+					<% }); %>
+				<% } %>
+			</ul>
+		</script>
+
+		<script type="text/html" id="header-953_site-banner-user-template">
+									<div class="user "
+								<div>
+					<div class="avatar">
+													<img src="https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-imagefileviewer/system-images/anonymous.gif_2D00_40x40x2.png?_=638878425704598126" />
+											</div>
+					<span class="user-name">
+													Anonymous
+											</span>
+
+														</div>
+			</div>
+
+										<ul class="navigation-list user">
+																																																																																																								</ul>
+					</script>
+				<script type="text/html" id="header-953_site-banner-search-filter-template">
+			<% if(places && places.length > 0) { %>
+				<ul class="navigation-list filter">
+					<% foreach(places, function(place) { %>
+						<li class="navigation-item">
+							<a class="place internal-link" href="#" data-key="<%: place.key %>" data-value="<%: place.value %>" data-searchparam="<%: place.searchParameter %>" data-searchvalue="<%: place.searchValue %>"><%= place.name %></a>
+					<% }); %>
+				</ul>
+			<% } %>
+
+			<% if(filters && filters.length > 0) { %>
+				<ul class="navigation-list filter">
+				<% foreach(filters, function(filter) {  %>
+					<li class="navigation-item">
+						<a class="type internal-link" href="#" data-key="<%: filter.key %>"><%= filter.name %></a>
+					</li>
+				<% }); %>
+				</ul>
+			<% } %>
+		</script>
+	
+	<script type="text/javascript">
+		
+		
+
+			
+															
+		jQuery(function(){
+			jQuery.telligent.evolution.widgets.siteBanner.register({
+				wrapper: '#header-953',
+				messagePrefix: 'widget.header-953.',
+				userPopupTemplate: 'header-953_site-banner-list-template',
+				banner: jQuery('#header-953_banner'),
+									handheldSearchFieldsLink: jQuery('#header-953_handheldSearchFieldsLink'),
+					handheldSearchFields: jQuery('#header-953_handheldSearchFields'),
+					handheldBannerLinksLink: jQuery('#header-953_handheldBannerLinksLink'),
+					handheldBannerLinks: jQuery('#header-953_handheldBannerLinks'),
+					handheldBannerLinksCount: jQuery('#header-953_handheldBannerLinksCount'),
+					bannerSiteLinks: jQuery('#header-953_bannerSiteLinks'),
+					handheldSiteLinksLink: jQuery('#header-953_handheldSiteLinksLink'),
+					handheldSiteLinks: jQuery('#header-953_handheldSiteLinks'),
+
+											siteNavigationType: 'group',
+						siteNavigationUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=953\u0026_wid=header-953\u0026_ct=header_0010\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=groups.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+						siteNavigationTemplate: 'header-953_site-banner-list-template',
+						siteNavigationLink: jQuery('#header-953_site'),
+						siteNavigationTitle:  							'Groups'
+						,
+													siteNavigationCustomItems:
+															[
+																						{
+									label: 'Community Help',
+									url: 'https://community.arm.com/community-help/'
+								}
+															,
+																						{
+									label: 'Education Hub',
+									url: 'https://community.arm.com/education-hub/'
+								}
+															,
+																						{
+									label: 'Arm Ambassadors',
+									url: 'https://community.arm.com/arm-ambassadors/'
+								}
+															 
+									,{
+										label: 'All groups',
+										url: '/g'
+									}
+																]
+							,
+																								searchFields: jQuery('#header-953_searchFields'),
+					searchTemplate: 'header-953_site-banner-list-template',
+					searchUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=953\u0026_wid=header-953\u0026_ct=header_0010\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=search.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+					searchInput: jQuery('#header-953_Search'),
+					searchFooterContent: '\u003ca data-messagename=\"widget.header-953.advancedsearch\" class=\"right\" id=\"header-953_advancedsearch\" href=\"#\"\u003eAdvanced search\u003c/a\u003e',
+					searchFilterTemplate: 'header-953_site-banner-search-filter-template',
+					searchAdvancedUrl: '/search?{0}',
+					searchAdvancedUserUrl: '/members?{0}',
+					searchFilterContentName: 'Content',
+					searchFilterGroupsName: 'Groups',
+					searchFilterPeopleName: 'People',
+					searchPlaceApplicationId:  '4677d8ae-2905-4ea6-9268-132b4c46eb85' ,
+					searchPlaceApplicationName:  'In Embedded and Microcontrollers blog' ,
+					searchPlaceGroupId:  '3bd9439f-c71c-4163-9e30-b3786cb1124c' ,
+					searchPlaceGroupLocalId:  '1208' ,
+					searchPlaceGroupName:  'In Arm Community blogs' ,
+					searchPlaceAnywhereName: 'Anywhere',
+					advancedSearchId: 'header-953_advancedsearch',
+					searchShowPeople:  false,
+													bannerLinks: jQuery('#header-953_bannerLinks'),
+
+					notificationsTemplate: 'header-953_site-banner-list-template',
+					notificationsUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=953\u0026_wid=header-953\u0026_ct=header_0010\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=notifications.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+					notificationsLink: jQuery('#header-953_notifications'),
+					notificationsUnread: 0,
+					notificationListFooterContent: '\u003ca href=\"$core_v2_urls.Notifications()\" class=\"view-all left\"\u003eView all\u003c/a\u003e\u003ca class=\"right\" href=\"${notificationSettingsUrl}\"\u003eSettings\u003c/a\u003e',
+					notificationPreferenceTemplate: 'header-953_site-banner-notification-preferences-template',
+					notificationssUnreadCountMessageSingular: 'You have {0} unread notification',
+					notificationssUnreadCountMessagePlural: 'You have {0} unread notifications',
+
+					conversationsTemplate: 'header-953_site-banner-list-template',
+					conversationsUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=953\u0026_wid=header-953\u0026_ct=header_0010\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=conversations.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+					conversationsLink: jQuery('#header-953_conversations'),
+					conversationsUnread: 0,
+					conversationNotificationTypeId: '84e4c0a7-3a17-4dfe-b8a0-d7038aa04a84',
+					conversationListFooterContent: '\u003ca href=\"${core_v2_urls.Conversations()}\" class=\"left\"\u003eView all\u003c/a\u003e\u003ca href=\"#\" data-messagename=\"widget.header-953.startconversation\" class=\"right\"\u003eNew message\u003c/a\u003e',
+					conversationsUnreadCountMessageSingular: 'You have {0} unread message',
+					conversationsUnreadCountMessagePlural: 'You have {0} unread messages',
+					conversationNewConversationUrl: null ,
+
+					bookmarksTemplate: 'header-953_site-banner-list-template',
+					bookmarksUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=953\u0026_wid=header-953\u0026_ct=header_0010\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=bookmarks.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+					bookmarksLink: jQuery('#header-953_bookmarks'),
+					bookmarksListFooterContent: '\u003ca class=\"left\" href=\"${bookmarksUrl}\"\u003eView all\u003c/a\u003e',
+					bookmarksContentTypes: '$core_v2_encoding.JavascriptEncode($contentTypes)',
+					bookmarksApplicationContentTypes: '$core_v2_encoding.JavascriptEncode($applicationContentTypes)',
+					bookmarksContainerContentTypes: '$core_v2_encoding.JavascriptEncode($containerContentTypes)',
+					bookmarksFilterTemplate: 'header-953_site-banner-bookmark-filter-template',
+					bookmarksIsBookmarked:  false ,
+					bookmarksCurrentContentId: '',
+					bookmarksBookmarks: 'Bookmarks',
+					bookmarkAdded: 'Bookmark added',
+					bookmarkRemoved: 'Bookmark removed',
+
+					userContentTemplate: 'header-953_site-banner-user-template',
+					userLink: jQuery('#header-953_user'),
+				
+				viewType: 'all'
+			});
+		});
+	</script>
+
+	<script type="text/javascript" src="https://community.arm.com/cfs-filesystemfile/__key/widgetfiles/0df71baf88f84214bf4a2907d004bc2c-d/ui.js?_=636965307792677076"></script>
+	
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery.telligent.evolution.widgets.moreContent.register({
+			wrapper: '#fragment-25918',
+			useSlider:  false ,
+			title: 'Related blog posts',
+			content: '#pifragment-25918-paged-content',
+			sliderTemplate: 'telligent.evolution.widgets.moreContent.sliderTemplate',
+			slideAt: 0.8,
+			delayedPagedContentWrapper: 'fragment-25918_delayedPagedContentWrapper',
+			delayedPagedContentUrl: "https://community.arm.com/utility/scripted-file.ashx?_fid=25918\u0026_wid=fragment-25918\u0026_ct=ppost_0000\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=content.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015",
+			isPreview:  false		});
+	});
+	</script>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery.telligent.evolution.widgets.moreContent.register({
+			wrapper: '#fragment-25919',
+			useSlider:  false ,
+			title: 'Related forum threads',
+			content: '#pifragment-25919-paged-content',
+			sliderTemplate: 'telligent.evolution.widgets.moreContent.sliderTemplate',
+			slideAt: 0.8,
+			delayedPagedContentWrapper: 'fragment-25919_delayedPagedContentWrapper',
+			delayedPagedContentUrl: "https://community.arm.com/utility/scripted-file.ashx?_fid=25919\u0026_wid=fragment-25919\u0026_ct=ppost_0000\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=content.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015",
+			isPreview:  false		});
+	});
+	</script>
+
+<script>jQuery.telligent.evolution.template.register('fragment-25926_loadMoreTemplate',function(h,d){var s=[];with(d){with(h){s.push('\t\u003cli class=\"load-more '); if(previous) { s.push(' previous '); } else { s.push(' next '); } s.push('\" '); if (loadInline) { s.push(' data-inline=\"inline\" '); } s.push('\u003e\r\n\t'); if(previous) { s.push('\r\n\t\t\u003ca class=\"previous\" href=\"#\" '); if (loadInline) { s.push(' data-inline=\"inline\" '); } s.push('\u003eView More \u003c/a\u003e\r\n\t'); } else { s.push('\r\n\t\t\u003ca class=\"next\" href=\"#\" '); if (loadInline) { s.push(' data-inline=\"inline\" '); } s.push('\u003eView More \u003c/a\u003e\r\n\t'); } s.push('\r\n\t\u003cspan class=\"ui-loading\" data-width=\"24\" data-height=\"24\"\u003e\u003c/span\u003e\r\n\u003c/li\u003e\r\n\r\n');}}return s.join('');});</script>
+<script>jQuery.telligent.evolution.template.register('fragment-25926_newRepliesTemplate',function(h,d){var s=[];with(d){with(h){s.push('\t\u003cdiv class=\"threaded new-replies '); if(offscreen) { s.push(' offscreen '); } s.push('\" '); if(offscreen) { s.push(' style=\"width: ');s.push(String( width ));s.push('px\" '); } s.push('\u003e\r\n\t\u003ca href=\"#\" data-messagename=\"ui.replies.new\" data-replyid=\"');s.push(String( replyId ));s.push('\"\u003e\r\n\t\t'); if(newReplies == 1) { s.push('\r\n\t\t\t');s.push(String( newReplies ));s.push(' new reply\r\n\t\t'); } else { s.push('\r\n\t\t\t');s.push(String( newReplies ));s.push(' new replies\r\n\t\t'); } s.push('\r\n\t\u003c/a\u003e\r\n\u003c/div\u003e\r\n\r\n');}}return s.join('');});</script>
+<script>jQuery.telligent.evolution.template.register('fragment-25926_replyTemplate',function(h,d){var s=[];with(d){with(h){s.push('\t\u003cli class=\"threaded content-item '); if(isDeleted) { s.push(' deleted '); } s.push('\"\r\n\tdata-id=\"');s.push(escape(String( id )));s.push('\"\r\n\tdata-parentid=\"');s.push(escape(String( parentId )));s.push('\"\r\n\tdata-createddate=\"');s.push(escape(String( createdDate )));s.push('\"\r\n\tdata-yesvotes=\"');s.push(escape(String( yesVotes )));s.push('\"\r\n\tdata-novotes=\"');s.push(escape(String( noVotes )));s.push('\"\u003e\r\n\r\n\t\u003cdiv class=\"rendered-content\"\u003e\r\n\t\t');s.push(String( body ));s.push('\r\n\t\t\u003cdiv class=\"typing-status-wrapper\"\u003e\u003c/div\u003e\r\n\t\t\u003cdiv class=\"new-replies-wrapper\"\u003e\u003c/div\u003e\r\n\t\u003c/div\u003e\r\n\r\n\t\u003cdiv class=\"newreply\"\u003e\u003c/div\u003e\r\n\r\n\t\u003cul class=\"content-list threaded\"\r\n\tdata-sortby=\"');s.push(escape(String( sortBy )));s.push('\"\r\n\tdata-sortorder=\"');s.push(escape(String( sortOrder )));s.push('\"\u003e\u003c/ul\u003e\r\n\r\n\u003c/li\u003e\r\n\r\n');}}return s.join('');});</script>
+<script>jQuery.telligent.evolution.template.register('fragment-25926_replyFormTemplate',function(h,d){var s=[];with(d){with(h){s.push('\t\u003cdiv class=\"reply-form '); if (editingReplyId) { s.push(' edit '); } else { s.push(' create '); } s.push('\" '); if (editingReplyId) { s.push(' data-editing=\"');s.push(String( editingReplyId ));s.push('\" '); } s.push('\u003e\r\n\t'); if(!editingReplyId) { s.push('\r\n\t\t\r\n\t\t\u003cdiv class=\"author\"  data-authorprofileurl=\"\" \u003e\r\n\t\t\t\u003cdiv class=\"avatar\"\u003e\r\n\t\t\t\t\t\t\t\t\t\u003cimg src=\"https://community.arm.com/cfs-filesystemfile/__key/communityserver-components-imagefileviewer/system-images/anonymous.gif_2D00_44x44x2.png?_=638878424557703331\" border=\"0px\" alt=\"Anonymous\" /\u003e\r\n\t\t\t\t\t\t\t\u003c/div\u003e\r\n\t\t\t\u003cdiv class=\"meta\"\u003e\r\n\t\t\t\t\u003cspan class=\"user-name\"\u003e\r\n\t\t\t\t\t\u003cspan class=\"ui-userpresence ui-tip \" style=\"display: none;\"\r\ndata-userid=\"2101\" \r\ndata-contentid=\"a399760c-579e-4689-954b-f01a3437adf0\" \r\ndata-contenttypeid=\"e9ed4118-60ed-4f2b-a026-5705b8793d05\" \r\ndata-present=\"\" \r\ndata-presentlabel=\"Online\" \r\ndata-notpresentlabel=\"Offline\" \r\ndata-tip=\"\"\u003e\u003c/span\u003e\r\n\t\t\t\t\t\t\t\t\t\t\tAnonymous\r\n\t\t\t\t\t\t\t\t\t\u003c/span\u003e\r\n\t\t\t\u003c/div\u003e\r\n\t\t\u003c/div\u003e\r\n\t'); } s.push('\r\n\r\n\t\u003cdiv class=\"editor\"\u003e\u003c/div\u003e\r\n\r\n\u003c/div\u003e\r\n\r\n');}}return s.join('');});</script>
+<script>jQuery.telligent.evolution.template.register('fragment-25926_typingIndicatorTemplate',function(h,d){var s=[];with(d){with(h){s.push('\t\u003cdiv class=\"threaded typing-status\"\u003e');s.push(String( displayName ));s.push(' is typing a reply...\u003c/div\u003e\r\n\r\n');}}return s.join('');});</script>
+<script>jQuery.telligent.evolution.template.register('fragment-25926_replyListTemplate',function(h,d){var s=[];with(d){with(h){s.push('\t\u003cul class=\"content-list threaded\"\r\n\tdata-sortby=\"');s.push(escape(String( sortBy )));s.push('\"\r\n\tdata-sortorder=\"');s.push(escape(String( sortOrder )));s.push('\"\u003e\u003c/ul\u003e\r\n\r\n');}}return s.join('');});</script>
+<script>jQuery.telligent.evolution.template.register('fragment-25926_headerTemplate',function(h,d){var s=[];with(d){with(h){s.push('\t\u003cdiv class=\"threaded-filter\" id=\"fragment-25926_filter\"\u003e\r\n\t\u003cul class=\"filter order margin-bottom margin-top\"\u003e\r\n\t\t\u003cli class=\"filter-option\" data-sortby=\"CreatedDate\" data-sortorder=\"Ascending\"\u003e\r\n\t\t\t\u003ca class=\"navigable\" href=\"?CommentSortBy=CreatedDate\u0026amp;CommentSortOrder=Ascending\"\u003eOldest\u003c/a\u003e\r\n\t\t\u003c/li\u003e\r\n\t\t\t\t\t\u003cli class=\"filter-option\" data-sortby=\"Votes\" data-sortorder=\"Descending\"\u003e\r\n\t\t\t\t\u003ca class=\"navigable\" href=\"?CommentSortBy=Votes\u0026amp;CommentSortOrder=Descending\"\u003eBest\u003c/a\u003e\r\n\t\t\t\u003c/li\u003e\r\n\t\t\t\t\u003cli class=\"filter-option\" data-sortby=\"CreatedDate\" data-sortorder=\"Descending\"\u003e\r\n\t\t\t\u003ca class=\"navigable\" href=\"?CommentSortBy=CreatedDate\u0026amp;CommentSortOrder=Descending\"\u003eNewest\u003c/a\u003e\r\n\t\t\u003c/li\u003e\r\n\t\u003c/ul\u003e\r\n\u003c/div\u003e\r\n\r\n');}}return s.join('');});</script>
+<script>jQuery.telligent.evolution.template.register('fragment-25926_statisticsTemplate',function(h,d){var s=[];with(d){with(h){s.push('\t\u003cul class=\"attribute-list\"\u003e\r\n'); if (typeof commentCount !== 'undefined')	{ s.push('\r\n\t\u003cli class=\"attribute-item count\"\u003e\r\n\t\t\u003cspan class=\"value prepend-icon comment\"\u003e\r\n\t\t\t'); if(commentCount == 1) { s.push('\r\n\t\t\t\t');s.push(String( commentCount ));s.push(' comment\r\n\t\t\t'); } else { s.push('\r\n\t\t\t\t');s.push(String( commentCount ));s.push(' comments\r\n\t\t\t'); } s.push('\r\n\t\t\u003c/span\u003e\r\n\t\u003c/li\u003e\r\n'); } s.push('\r\n'); if (typeof userCount !== 'undefined') { s.push('\r\n\t\u003cli class=\"attribute-item users\"\u003e\r\n\t\t\u003cspan class=\"value prepend-icon user\"\u003e\r\n\t\t\t'); if(userCount == 1) { s.push('\r\n\t\t\t\t');s.push(String( userCount ));s.push(' member is here\r\n\t\t\t'); } else { s.push('\r\n\t\t\t\t');s.push(String( userCount ));s.push(' members are here\r\n\t\t\t'); } s.push('\r\n\t\t\u003c/span\u003e\r\n\t\u003c/li\u003e\r\n'); } s.push('\r\n\u003c/ul\u003e\r\n');}}return s.join('');});</script>
+	<script type="text/javascript" src="https://community.arm.com/cfs-filesystemfile/__key/widgetfiles/e4e96f3241434dc7bc4a04d39c30192f-d/ui.js?_=637091701159799643"></script>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery.telligent.evolution.widgets.comments.register({
+			commentId:  null ,
+			preFocus:  false ,
+			wrapperId: 'fragment-25926',
+			wrapper: '#fragment-25926',
+			container: '#fragment-25926_preRenderedWrapperId',
+			bestRepliesWrapperId: 'fragment-25926_bestRepliesWrapper',
+			contentId: 'cf76737c-e9d2-43e1-9dd9-f1c206b4dc9c',
+			contentTypeId: 'f7d226ab-d59f-475c-9d22-4a79e3f0ec07',
+			commentTypeId:  '' ,
+			sortOrder: 'Descending',
+			sortBy: 'Votes',
+			flattenedSortBy: 'CreatedDate',
+			flattenedSortOrder: 'Ascending',
+			flattenedDepth: 2,
+			pageSize: 5,
+			highlightNewSeconds: 4,
+			endlessScroll:  true ,
+			listRepliesUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=25926\u0026_wid=fragment-25926\u0026_ct=ppost_0000\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=callback-model-list-replies.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+			addReplyUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=25926\u0026_wid=fragment-25926\u0026_ct=ppost_0000\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=callback-model-add-reply.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+			editReplyUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=25926\u0026_wid=fragment-25926\u0026_ct=ppost_0000\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=callback-model-edit-reply.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+			getReplyUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=25926\u0026_wid=fragment-25926\u0026_ct=ppost_0000\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=callback-model-get-reply.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+			listBestUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=25926\u0026_wid=fragment-25926\u0026_ct=ppost_0000\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=callback-model-list-best.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+			loadMoreTemplate: 'fragment-25926_loadMoreTemplate',
+			newRepliesTemplate: 'fragment-25926_newRepliesTemplate',
+			replyTemplate: 'fragment-25926_replyTemplate',
+			typingIndicatorTemplate: 'fragment-25926_typingIndicatorTemplate',
+			replyListTemplate: 'fragment-25926_replyListTemplate',
+			replyFormTemplate: 'fragment-25926_replyFormTemplate',
+			emptyGuid: '00000000-0000-0000-0000-000000000000',
+			deleteCommentPanelUrl: '#_cptype=panel\u0026_cpcontexttype=Explicit\u0026_cppanelid=5aabcf9a-e27b-49e7-93cf-060498d68763\u0026commentid=00000000-0000-0000-0000-000000000000',
+			loginUrl: '/login?ReturnUrl=%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+			headerTemplate: 'fragment-25926_headerTemplate',
+			filterWrapper: '#fragment-25926_filter',
+			noRepliesMessage: 'There are no remaining comments.',
+			replyEditor: {
+				appendTo: function(container) {
+					jQuery('#fragment-25926_fragment-25926_replyEditor').evolutionHtmlEditor('moveTo',container);;
+					jQuery('#fragment-25926_fragment-25926_replyEditor').on('keydown', function(e) { jQuery.telligent.evolution.messaging.publish('widgets.threadedComments.typing', { container: container }) });;
+				},
+				remove: function() {
+					// removing the editor technically just moves it back to a hidden location
+					var wrapper = '#fragment-25926_editorWrapperWrapper';
+					jQuery('#fragment-25926_fragment-25926_replyEditor').evolutionHtmlEditor('moveTo',wrapper);;
+				},
+				val: function(val) {
+					if (typeof(val) !== 'undefined') {
+						jQuery('#fragment-25926_fragment-25926_replyEditor').evolutionHtmlEditor('val', val);
+					}
+					return jQuery('#fragment-25926_fragment-25926_replyEditor').evolutionHtmlEditor('val');
+				},
+				focus: function() {
+					jQuery('#fragment-25926_fragment-25926_replyEditor').evolutionHtmlEditor('focus');
+				}
+			},
+			text: {
+				more: 'More',
+				peopleWhoVoted: 'People who voted on this reply',
+				noVotes: 'No Votes',
+				successMessage: 'Your comment has been posted.',
+				moderateMessage: 'Thank you, your comment requires moderation so it may take a while to appear.'
+			},
+			statisticsWrapper: '#fragment-25926_statisticsWrapper',
+			statisticsTemplate: 'fragment-25926_statisticsTemplate',
+			totalComments: 0,
+			presentUsers: 0,
+			storeTempDataCallbackUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=25926\u0026_wid=fragment-25926\u0026_ct=ppost_0000\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=callback-model-store-temp.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+			loginUrl: '/login?ReturnUrl=%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+			tempBody: '',
+			createEditor: {
+				attachOnChange: function() {
+					jQuery('#fragment-25926_fragment-25926_createEditor').on('keydown', function(e) { jQuery.telligent.evolution.messaging.publish('widgets.comments.typing', { from: 'fragment-25926' }) });;
+				},
+				val: function(val) {
+					if (typeof(val) !== 'undefined') {
+						jQuery('#fragment-25926_fragment-25926_createEditor').evolutionHtmlEditor('val', val);
+					}
+					return jQuery('#fragment-25926_fragment-25926_createEditor').evolutionHtmlEditor('val');
+				},
+				focus: function() {
+					jQuery('#fragment-25926_fragment-25926_createEditor').evolutionHtmlEditor('focus');
+				}
+			}
+		});
+	});
+	</script>
+
+	<script type="text/javascript" src="https://community.arm.com/cfs-filesystemfile/__key/widgetfiles/212f71d69e37457887f33f32918f6ae2-d/ui.js?_=636983605351460182"></script>
+
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery.telligent.evolution.widgets.userHover.register({
+				getUserInformationUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=934\u0026_wid=footer-934\u0026_ct=footer_0010\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=get-user-information.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015',
+				getRecentActivityUrl: 'https://community.arm.com/utility/scripted-file.ashx?_fid=934\u0026_wid=footer-934\u0026_ct=footer_0010\u0026_ctt=a3b17ab0af5f11dda3501fcf55d89593\u0026_ctc=4677d8ae29054ea69268132b4c46eb85\u0026_ctn=b2511d65fd5f490299563e47e3fd280f\u0026_ctd=0\u0026_ep=0\u0026_rt=Web\u0026_cft=Other\u0026_cf=get-recent-activity.vm\u0026_pcurl=~%2Farm-community-blogs%2Fb%2Fembedded-and-microcontrollers-blog%2Fposts%2Fwalking-around-the-mbed-zone-at-techcon-2015'
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+	//<![CDATA[
+
+        jQuery.telligent.evolution.ui.components.moderate.defaults = {
+    		reportedText: 'Thank you for your report',
+    		flagText: 'Report to a moderator',
+    		flaggedText: 'Already reported to a moderator'
+    	};
+	//]]>
+	</script>
+</form>
+<script class="optanon-category-C0003" type="text/plain" src="https://resources.digital-cloud.medallia.eu/wdceu/28864/onsite/embed.js" async></script>
+<script class="optanon-category-C0003" type="text/plain" src="//munchkin.marketo.net/munchkin.js"
+
+type="text/javascript"></script>
+
+<script class="optanon-category-C0003" type="text/plain">
+
+  Munchkin.init("479-ZYW-907",
+
+{     asyncOnly: true,     altIds : ["714-XIJ-402"]   }
+);
+
+</script>
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+rdf:about="https://community.arm.com//arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/walking-around-the-mbed-zone-at-techcon-2015"
+dc:identifier="https://community.arm.com//arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/walking-around-the-mbed-zone-at-techcon-2015"
+dc:title="Walking around the mbed Zone at TechCon 2015"
+trackback:ping="https://community.arm.com//arm-community-blogs/b/embedded-and-microcontrollers-blog/trackback?WeblogPostId=11210" />
+</rdf:RDF>
+-->
+</body>
+</html>
