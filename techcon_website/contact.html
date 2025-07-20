@@ -37,6 +37,21 @@
             referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
+        <form action="/submit-form" method="post">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="place@domain.com" required>
+            <br><br>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="Your message here..." required></textarea>
+            <br><br>
+            <button type="submit">Send Message</button>
+        </form>
     </main>
+    <footer>
+        &copy; Techcon Conference 2024. All rights reserved. copyright 2024
+    </footer>
 </body>
 </html>
